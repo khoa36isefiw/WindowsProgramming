@@ -1,0 +1,119 @@
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe.config
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\bin\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Properties.Resources.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLogin.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmAddStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmMain.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\20110375_HuynhDangKhoa_LoginForm\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmSignUp.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe.config
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmAddStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLogin.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmMain.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmSignUp.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmStudentList.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Properties.Resources.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week 01\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmUpdateDeleteStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe.config
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmAddStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLogin.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmMain.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmSignUp.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmStudentList.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmUpdateDeleteStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Properties.Resources.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmFindStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmForgetPassWord.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmResetPassword.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLoading.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\bin\Debug\Guna.UI2.dll
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CopyComplete
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe.config
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\bin\Debug\Guna.UI2.dll
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmAddStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmFindStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmForgetPassWord.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLoading.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLogin.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmMain.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmResetPassword.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmSignUp.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmStudentList.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmUpdateDeleteStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Properties.Resources.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CopyComplete
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Week1\Assignment\StudentManagementCommingSoon\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe.config
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\bin\Debug\Guna.UI2.dll
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmAddStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmFindStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmForgetPassWord.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLoading.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLogin.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmMain.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmResetPassword.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmSignUp.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmStudentList.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmUpdateDeleteStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Properties.Resources.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CopyComplete
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe.config
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\Guna.UI2.dll
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.AssemblyReference.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmAddStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmFindStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmForgetPassWord.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLoading.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmLogin.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmMain.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmResetPassword.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmSignUp.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmStudentList.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmUpdateDeleteStudent.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Properties.Resources.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.GenerateResource.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.csproj.CopyComplete
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.exe
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\20110375_HuynhDangKhoa_LoginForm.pdb
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.frmManagementUser.resources
