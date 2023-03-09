@@ -59,7 +59,7 @@
             this.mnuManageUser});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1008, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1008, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -75,7 +75,7 @@
             this.toolStripMenuItem1,
             this.mnuStudentExit});
             this.mnuStudent.Name = "mnuStudent";
-            this.mnuStudent.Size = new System.Drawing.Size(87, 24);
+            this.mnuStudent.Size = new System.Drawing.Size(87, 26);
             this.mnuStudent.Text = "STUDENT";
             // 
             // mnuStudentAdded
@@ -134,13 +134,13 @@
             // mnuCourse
             // 
             this.mnuCourse.Name = "mnuCourse";
-            this.mnuCourse.Size = new System.Drawing.Size(78, 24);
+            this.mnuCourse.Size = new System.Drawing.Size(78, 26);
             this.mnuCourse.Text = "COURSE";
             // 
             // mnuScore
             // 
             this.mnuScore.Name = "mnuScore";
-            this.mnuScore.Size = new System.Drawing.Size(68, 24);
+            this.mnuScore.Size = new System.Drawing.Size(68, 26);
             this.mnuScore.Text = "SCORE";
             // 
             // mnuManageUser
@@ -148,14 +148,14 @@
             this.mnuManageUser.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuManageUser_Account});
             this.mnuManageUser.Name = "mnuManageUser";
-            this.mnuManageUser.Size = new System.Drawing.Size(164, 24);
+            this.mnuManageUser.Size = new System.Drawing.Size(164, 26);
             this.mnuManageUser.Text = "MANAGEMENT USER";
             this.mnuManageUser.Click += new System.EventHandler(this.mnuManageUser_Click);
             // 
             // mnuManageUser_Account
             // 
             this.mnuManageUser_Account.Name = "mnuManageUser_Account";
-            this.mnuManageUser_Account.Size = new System.Drawing.Size(224, 26);
+            this.mnuManageUser_Account.Size = new System.Drawing.Size(146, 26);
             this.mnuManageUser_Account.Text = "Account";
             this.mnuManageUser_Account.Click += new System.EventHandler(this.mnuManageUser_Account_Click);
             // 
@@ -163,9 +163,9 @@
             // 
             this.picBackGround.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picBackGround.Image = ((System.Drawing.Image)(resources.GetObject("picBackGround.Image")));
-            this.picBackGround.Location = new System.Drawing.Point(0, 28);
+            this.picBackGround.Location = new System.Drawing.Point(0, 30);
             this.picBackGround.Name = "picBackGround";
-            this.picBackGround.Size = new System.Drawing.Size(1008, 573);
+            this.picBackGround.Size = new System.Drawing.Size(1008, 571);
             this.picBackGround.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBackGround.TabIndex = 1;
             this.picBackGround.TabStop = false;

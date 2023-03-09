@@ -25,11 +25,6 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
       
 
        
@@ -359,6 +354,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             {
                 picStudent.Image = Image.FromFile(opf.FileName);
             }
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

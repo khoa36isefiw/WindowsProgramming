@@ -13,7 +13,10 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 {
     public partial class frmLogin : Form
     {
-        
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
 
         public frmLogin()
         {
@@ -25,61 +28,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 txtPassword.Text = Properties.Settings.Default.matKhau;
             }
         }
-        
-
-        
-
-     
-
-      
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radbHuman_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radbStudent_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void picBox_Login_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void pictBoxShow_Click(object sender, EventArgs e)
-        {
-            if (pictBoxShow.Visible)
-            {
-                txtPassword.PasswordChar = default(char);
-                //txtPassword.PasswordChar = '\0';
-                pictBoxHide.Visible = true;
-                pictBoxShow.Visible = false;
-            }
-        }
-
-        private void pictBoxHide_Click(object sender, EventArgs e)
-        {
-            if (pictBoxHide.Visible)
-            {
-                txtPassword.PasswordChar = '*';
-
-                pictBoxShow.Visible = true;
-                pictBoxHide.Visible = false;
-            }
-        }
-
-        private void txtUserName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+   
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
@@ -140,7 +89,31 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         }
 
 
-       
+        private void pictBoxShow_Click(object sender, EventArgs e)
+        {
+            if (pictBoxShow.Visible)
+            {
+                txtPassword.PasswordChar = '*';
+                //txtPassword.PasswordChar = '\0';
+                pictBoxHide.Visible = true;
+                pictBoxShow.Visible = false;
+            }
+        }
+
+        private void pictBoxHide_Click(object sender, EventArgs e)
+        {
+            if (pictBoxHide.Visible)
+            {
+                txtPassword.PasswordChar = default(char);
+
+                pictBoxShow.Visible = true;
+                pictBoxHide.Visible = false;
+            }
+        }
+
+
+
+
 
     }
 }

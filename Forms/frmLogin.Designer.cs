@@ -151,7 +151,6 @@
             this.radbHuman.TabStop = true;
             this.radbHuman.Text = "Human Resource";
             this.radbHuman.UseVisualStyleBackColor = true;
-            this.radbHuman.CheckedChanged += new System.EventHandler(this.radbHuman_CheckedChanged);
             // 
             // radbStudent
             // 
@@ -164,7 +163,6 @@
             this.radbStudent.TabStop = true;
             this.radbStudent.Text = "Student";
             this.radbStudent.UseVisualStyleBackColor = true;
-            this.radbStudent.CheckedChanged += new System.EventHandler(this.radbStudent_CheckedChanged);
             // 
             // txtUserName
             // 
@@ -189,7 +187,6 @@
             this.txtUserName.SelectedText = "";
             this.txtUserName.Size = new System.Drawing.Size(229, 48);
             this.txtUserName.TabIndex = 17;
-            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // btnCancel
             // 
@@ -269,8 +266,6 @@
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.pictBoxShow);
-            this.Controls.Add(this.pictBoxHide);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.guna2PictureBox1);
@@ -278,6 +273,8 @@
             this.Controls.Add(this.radbHuman);
             this.Controls.Add(this.radbStudent);
             this.Controls.Add(this.lblIntro);
+            this.Controls.Add(this.pictBoxShow);
+            this.Controls.Add(this.pictBoxHide);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Form - Huynh Dang Khoa - 20110375";

@@ -46,22 +46,6 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     gender = "Female";
                 }
 
-           
-
-
-                //Difine User and Pass
-                //DataTable table = user.getStudents(command);
-                //command.Parameters.Add("@User", SqlDbType.VarChar).Value = txtUserName.Text;
-                //command.Parameters.Add("@Pass", SqlDbType.VarChar).Value = txtPassword.Text;
-
-                //adapter.SelectCommand = command;
-
-                //adapter.Fill(table);
-                //if (table.Rows.Count > 0)
-                //{
-                //    this.DialogResult = DialogResult.OK;
-                //}
-            
 
                 SqlDataAdapter adapter = new SqlDataAdapter();
 

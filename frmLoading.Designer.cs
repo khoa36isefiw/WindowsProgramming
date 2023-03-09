@@ -56,7 +56,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(553, 317);
+            this.ClientSize = new System.Drawing.Size(366, 164);
             this.ControlBox = false;
             this.Controls.Add(this.progressBarLoading);
             this.Controls.Add(this.lblLoading);

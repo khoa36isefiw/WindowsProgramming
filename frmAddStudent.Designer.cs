@@ -137,10 +137,10 @@
             // lblStuEmail
             // 
             this.lblStuEmail.AutoSize = true;
-            this.lblStuEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(38)))), ((int)(((byte)(70)))));
+            this.lblStuEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(56)))), ((int)(((byte)(91)))));
             this.lblStuEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuEmail.Location = new System.Drawing.Point(8, 320);
+            this.lblStuEmail.Location = new System.Drawing.Point(13, 316);
             this.lblStuEmail.Name = "lblStuEmail";
             this.lblStuEmail.Size = new System.Drawing.Size(51, 20);
             this.lblStuEmail.TabIndex = 6;
@@ -176,7 +176,7 @@
             this.lblStuMajor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(49)))), ((int)(((byte)(73)))));
             this.lblStuMajor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuMajor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuMajor.Location = new System.Drawing.Point(425, 127);
+            this.lblStuMajor.Location = new System.Drawing.Point(436, 100);
             this.lblStuMajor.Name = "lblStuMajor";
             this.lblStuMajor.Size = new System.Drawing.Size(51, 20);
             this.lblStuMajor.TabIndex = 9;
@@ -193,7 +193,6 @@
             this.lblStuPic.Size = new System.Drawing.Size(62, 20);
             this.lblStuPic.TabIndex = 10;
             this.lblStuPic.Text = "Picture";
-            this.lblStuPic.Click += new System.EventHandler(this.label11_Click);
             // 
             // dtpDate
             // 
@@ -240,7 +239,7 @@
             // 
             // picStudent
             // 
-            this.picStudent.Location = new System.Drawing.Point(524, 165);
+            this.picStudent.Location = new System.Drawing.Point(524, 142);
             this.picStudent.Name = "picStudent";
             this.picStudent.Size = new System.Drawing.Size(201, 128);
             this.picStudent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -251,6 +250,7 @@
             // 
             this.pictBackgroundAddStudent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictBackgroundAddStudent.Image = ((System.Drawing.Image)(resources.GetObject("pictBackgroundAddStudent.Image")));
+            this.pictBackgroundAddStudent.ImageLocation = "Ư";
             this.pictBackgroundAddStudent.Location = new System.Drawing.Point(0, 0);
             this.pictBackgroundAddStudent.Name = "pictBackgroundAddStudent";
             this.pictBackgroundAddStudent.Size = new System.Drawing.Size(775, 528);
@@ -278,7 +278,7 @@
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.PasswordChar = '\0';
             this.txtStudentID.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtStudentID.PlaceholderText = "Text";
+            this.txtStudentID.PlaceholderText = "ID";
             this.txtStudentID.SelectedText = "";
             this.txtStudentID.Size = new System.Drawing.Size(201, 30);
             this.txtStudentID.TabIndex = 31;
@@ -303,7 +303,7 @@
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PasswordChar = '\0';
             this.txtFirstName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFirstName.PlaceholderText = "Text";
+            this.txtFirstName.PlaceholderText = "First Name";
             this.txtFirstName.SelectedText = "";
             this.txtFirstName.Size = new System.Drawing.Size(201, 30);
             this.txtFirstName.TabIndex = 32;
@@ -368,7 +368,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
             this.txtLastName.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLastName.PlaceholderText = "Text";
+            this.txtLastName.PlaceholderText = "Last Name";
             this.txtLastName.SelectedText = "";
             this.txtLastName.Size = new System.Drawing.Size(201, 30);
             this.txtLastName.TabIndex = 35;
@@ -393,9 +393,9 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
             this.txtPhone.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhone.PlaceholderText = "Text";
+            this.txtPhone.PlaceholderText = "Phone Number";
             this.txtPhone.SelectedText = "";
-            this.txtPhone.Size = new System.Drawing.Size(201, 30);
+            this.txtPhone.Size = new System.Drawing.Size(201, 34);
             this.txtPhone.TabIndex = 36;
             // 
             // txtEmail
@@ -418,10 +418,11 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.PlaceholderText = "Text";
+            this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(201, 30);
+            this.txtEmail.Size = new System.Drawing.Size(201, 34);
             this.txtEmail.TabIndex = 37;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // txtAddress
             // 
@@ -443,7 +444,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAddress.PlaceholderText = "Text";
+            this.txtAddress.PlaceholderText = "Address";
             this.txtAddress.SelectedText = "";
             this.txtAddress.Size = new System.Drawing.Size(201, 30);
             this.txtAddress.TabIndex = 38;
@@ -463,14 +464,14 @@
             this.txtMajor.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMajor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMajor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMajor.Location = new System.Drawing.Point(524, 113);
+            this.txtMajor.Location = new System.Drawing.Point(524, 100);
             this.txtMajor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMajor.Name = "txtMajor";
             this.txtMajor.PasswordChar = '\0';
             this.txtMajor.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMajor.PlaceholderText = "Text";
+            this.txtMajor.PlaceholderText = "Your Major";
             this.txtMajor.SelectedText = "";
-            this.txtMajor.Size = new System.Drawing.Size(201, 30);
+            this.txtMajor.Size = new System.Drawing.Size(201, 35);
             this.txtMajor.TabIndex = 39;
             // 
             // cboDepartment
@@ -510,7 +511,7 @@
             this.btnUpImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(82)))));
             this.btnUpImage.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpImage.ForeColor = System.Drawing.Color.White;
-            this.btnUpImage.Location = new System.Drawing.Point(534, 306);
+            this.btnUpImage.Location = new System.Drawing.Point(536, 276);
             this.btnUpImage.Name = "btnUpImage";
             this.btnUpImage.Size = new System.Drawing.Size(180, 30);
             this.btnUpImage.TabIndex = 41;

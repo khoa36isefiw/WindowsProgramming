@@ -28,80 +28,220 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtInputGmail = new System.Windows.Forms.TextBox();
-            this.lblVerify = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmForgetPassWord));
+            this.groupBox_NewPass = new System.Windows.Forms.GroupBox();
+            this.txtResetPass = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox_VerifyCode = new System.Windows.Forms.GroupBox();
+            this.btnVerifyCode = new Guna.UI2.WinForms.Guna2Button();
             this.txtVerCode = new System.Windows.Forms.TextBox();
-            this.btnSendEmail = new System.Windows.Forms.Button();
-            this.btnVerifyCode = new System.Windows.Forms.Button();
+            this.lblVerify = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtResetPassVer = new System.Windows.Forms.TextBox();
+            this.txtInputGmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.btnSendEmail = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReset = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox_NewPass.SuspendLayout();
+            this.groupBox_VerifyCode.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblEmail
+            // groupBox_NewPass
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(67, 73);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(42, 16);
-            this.lblEmail.TabIndex = 0;
-            this.lblEmail.Text = "Gmail";
+            this.groupBox_NewPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
+            this.groupBox_NewPass.Controls.Add(this.btnReset);
+            this.groupBox_NewPass.Controls.Add(this.txtResetPass);
+            this.groupBox_NewPass.Controls.Add(this.label2);
+            this.groupBox_NewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_NewPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(255)))), ((int)(((byte)(191)))));
+            this.groupBox_NewPass.Location = new System.Drawing.Point(0, 280);
+            this.groupBox_NewPass.Name = "groupBox_NewPass";
+            this.groupBox_NewPass.Size = new System.Drawing.Size(561, 162);
+            this.groupBox_NewPass.TabIndex = 12;
+            this.groupBox_NewPass.TabStop = false;
+            this.groupBox_NewPass.Text = "New Password";
+            this.groupBox_NewPass.UseCompatibleTextRendering = true;
             // 
-            // txtInputGmail
+            // txtResetPass
             // 
-            this.txtInputGmail.Location = new System.Drawing.Point(174, 73);
-            this.txtInputGmail.Name = "txtInputGmail";
-            this.txtInputGmail.Size = new System.Drawing.Size(183, 22);
-            this.txtInputGmail.TabIndex = 1;
+            this.txtResetPass.Location = new System.Drawing.Point(179, 37);
+            this.txtResetPass.Name = "txtResetPass";
+            this.txtResetPass.Size = new System.Drawing.Size(183, 28);
+            this.txtResetPass.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.label2.Location = new System.Drawing.Point(13, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 22);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Password";
+            // 
+            // groupBox_VerifyCode
+            // 
+            this.groupBox_VerifyCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
+            this.groupBox_VerifyCode.Controls.Add(this.btnSendEmail);
+            this.groupBox_VerifyCode.Controls.Add(this.btnVerifyCode);
+            this.groupBox_VerifyCode.Controls.Add(this.txtVerCode);
+            this.groupBox_VerifyCode.Controls.Add(this.lblVerify);
+            this.groupBox_VerifyCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox_VerifyCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(255)))), ((int)(((byte)(191)))));
+            this.groupBox_VerifyCode.Location = new System.Drawing.Point(0, 11);
+            this.groupBox_VerifyCode.Name = "groupBox_VerifyCode";
+            this.groupBox_VerifyCode.Size = new System.Drawing.Size(561, 168);
+            this.groupBox_VerifyCode.TabIndex = 11;
+            this.groupBox_VerifyCode.TabStop = false;
+            this.groupBox_VerifyCode.Text = "Verify Code";
+            this.groupBox_VerifyCode.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // btnVerifyCode
+            // 
+            this.btnVerifyCode.BorderRadius = 8;
+            this.btnVerifyCode.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnVerifyCode.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnVerifyCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnVerifyCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnVerifyCode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(219)))), ((int)(((byte)(240)))));
+            this.btnVerifyCode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnVerifyCode.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnVerifyCode.Location = new System.Drawing.Point(421, 103);
+            this.btnVerifyCode.Name = "btnVerifyCode";
+            this.btnVerifyCode.Size = new System.Drawing.Size(108, 38);
+            this.btnVerifyCode.TabIndex = 13;
+            this.btnVerifyCode.Text = "Verify";
+            this.btnVerifyCode.Click += new System.EventHandler(this.btnVerifyCode_Click);
+            // 
+            // txtVerCode
+            // 
+            this.txtVerCode.Location = new System.Drawing.Point(186, 113);
+            this.txtVerCode.Name = "txtVerCode";
+            this.txtVerCode.Size = new System.Drawing.Size(183, 28);
+            this.txtVerCode.TabIndex = 3;
             // 
             // lblVerify
             // 
             this.lblVerify.AutoSize = true;
-            this.lblVerify.Location = new System.Drawing.Point(70, 140);
+            this.lblVerify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
+            this.lblVerify.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVerify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.lblVerify.Location = new System.Drawing.Point(13, 111);
             this.lblVerify.Name = "lblVerify";
-            this.lblVerify.Size = new System.Drawing.Size(78, 16);
+            this.lblVerify.Size = new System.Drawing.Size(105, 22);
             this.lblVerify.TabIndex = 2;
             this.lblVerify.Text = "Verify-Code";
             // 
-            // txtVerCode
+            // pictureBox1
             // 
-            this.txtVerCode.Location = new System.Drawing.Point(174, 133);
-            this.txtVerCode.Name = "txtVerCode";
-            this.txtVerCode.Size = new System.Drawing.Size(183, 22);
-            this.txtVerCode.TabIndex = 3;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(561, 433);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.label3.Location = new System.Drawing.Point(12, 383);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 22);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "RePassword";
+            // 
+            // txtResetPassVer
+            // 
+            this.txtResetPassVer.Location = new System.Drawing.Point(179, 385);
+            this.txtResetPassVer.Name = "txtResetPassVer";
+            this.txtResetPassVer.Size = new System.Drawing.Size(183, 22);
+            this.txtResetPassVer.TabIndex = 5;
+            // 
+            // txtInputGmail
+            // 
+            this.txtInputGmail.Location = new System.Drawing.Point(193, 49);
+            this.txtInputGmail.Name = "txtInputGmail";
+            this.txtInputGmail.Size = new System.Drawing.Size(183, 22);
+            this.txtInputGmail.TabIndex = 1;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(180)))), ((int)(((byte)(149)))));
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
+            this.lblEmail.Location = new System.Drawing.Point(12, 49);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(56, 22);
+            this.lblEmail.TabIndex = 0;
+            this.lblEmail.Text = "Gmail";
             // 
             // btnSendEmail
             // 
-            this.btnSendEmail.Location = new System.Drawing.Point(409, 71);
+            this.btnSendEmail.BorderColor = System.Drawing.Color.Transparent;
+            this.btnSendEmail.BorderRadius = 8;
+            this.btnSendEmail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSendEmail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSendEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSendEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSendEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(219)))), ((int)(((byte)(240)))));
+            this.btnSendEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSendEmail.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnSendEmail.Location = new System.Drawing.Point(421, 27);
             this.btnSendEmail.Name = "btnSendEmail";
-            this.btnSendEmail.Size = new System.Drawing.Size(87, 24);
-            this.btnSendEmail.TabIndex = 4;
+            this.btnSendEmail.Size = new System.Drawing.Size(108, 38);
+            this.btnSendEmail.TabIndex = 13;
             this.btnSendEmail.Text = "Send";
-            this.btnSendEmail.UseVisualStyleBackColor = true;
             this.btnSendEmail.Click += new System.EventHandler(this.btnSendEmail_Click);
             // 
-            // btnVerifyCode
+            // btnReset
             // 
-            this.btnVerifyCode.Location = new System.Drawing.Point(409, 140);
-            this.btnVerifyCode.Name = "btnVerifyCode";
-            this.btnVerifyCode.Size = new System.Drawing.Size(87, 30);
-            this.btnVerifyCode.TabIndex = 4;
-            this.btnVerifyCode.Text = "Verify-Code";
-            this.btnVerifyCode.UseVisualStyleBackColor = true;
-            this.btnVerifyCode.Click += new System.EventHandler(this.btnVerifyCode_Click);
+            this.btnReset.BorderRadius = 8;
+            this.btnReset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReset.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(219)))), ((int)(((byte)(240)))));
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReset.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnReset.Location = new System.Drawing.Point(421, 61);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(108, 38);
+            this.btnReset.TabIndex = 10;
+            this.btnReset.Text = "Reset";
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // frmForgetPassWord
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 560);
-            this.Controls.Add(this.btnVerifyCode);
-            this.Controls.Add(this.btnSendEmail);
-            this.Controls.Add(this.txtVerCode);
-            this.Controls.Add(this.lblVerify);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(561, 433);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtResetPassVer);
             this.Controls.Add(this.txtInputGmail);
             this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.groupBox_VerifyCode);
+            this.Controls.Add(this.groupBox_NewPass);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "frmForgetPassWord";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmForgetPassWord";
             this.Load += new System.EventHandler(this.frmForgetPassWord_Load);
+            this.groupBox_NewPass.ResumeLayout(false);
+            this.groupBox_NewPass.PerformLayout();
+            this.groupBox_VerifyCode.ResumeLayout(false);
+            this.groupBox_VerifyCode.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,11 +249,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblVerify;
-        private System.Windows.Forms.Button btnSendEmail;
-        private System.Windows.Forms.Button btnVerifyCode;
-        internal System.Windows.Forms.TextBox txtInputGmail;
+        private System.Windows.Forms.GroupBox groupBox_NewPass;
+        private System.Windows.Forms.TextBox txtResetPass;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox_VerifyCode;
+        private Guna.UI2.WinForms.Guna2Button btnVerifyCode;
         internal System.Windows.Forms.TextBox txtVerCode;
+        private System.Windows.Forms.Label lblVerify;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtResetPassVer;
+        internal System.Windows.Forms.TextBox txtInputGmail;
+        private System.Windows.Forms.Label lblEmail;
+        private Guna.UI2.WinForms.Guna2Button btnSendEmail;
+        private Guna.UI2.WinForms.Guna2Button btnReset;
     }
 }

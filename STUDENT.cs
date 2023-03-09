@@ -63,9 +63,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             string Email, string address, string departMent, string Major, MemoryStream picture)
         {
 
-            //SqlCommand command = new SqlCommand("UPDATE student SET FirstName=@fn, LastName=@ln, BirthDate=@birthDay," +
-            //    " Gender=@gender, PhoneNumber=@phone, Email=@email, Address=@addrs," +
-            //    " Department=@depart, Major=@major, Picture=@pic WHERE id = " + ID, mydb.getConnection);
+           
 
             SqlCommand command = new SqlCommand("UPDATE student SET FirstName=@fn, LastName=@ln, BirthDate=@birthDay," +
             " Gender=@gender, PhoneNumber=@phone, Email=@email, Address=@addrs," +
