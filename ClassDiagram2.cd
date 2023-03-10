@@ -3,29 +3,29 @@
   <Class Name="_20110375_HuynhDangKhoa_LoginForm.frmAddStudent">
     <Position X="0.75" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>gACgBAABADACECEEACCIAEAKACNAA4AwgAgRAAAIAQQ=</HashCode>
-      <FileName>frmAddStudent.cs</FileName>
+      <HashCode>gAChLAABADACUiEEASCIAEAKACNAA4AwgAgQAAAIAQQ=</HashCode>
+      <FileName>Forms\frmAddStudent.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_20110375_HuynhDangKhoa_LoginForm.frmLogin">
     <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAgBAAAQACAAoAEAgACAAEACKAAACAEABAAAAABAAAA=</HashCode>
-      <FileName>frmLogin.cs</FileName>
+      <HashCode>IAgBAAAQACAAoAUAgICABEACKAAACAEBAAIAAADQAAE=</HashCode>
+      <FileName>Forms\frmLogin.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_20110375_HuynhDangKhoa_LoginForm.frmMain">
     <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAACAEDAAAAAAAADIAAACAAAAAEBABACACACAAAA=</HashCode>
-      <FileName>frmMain.cs</FileName>
+      <HashCode>AQCAABCIEGFAAAECAAjIABACAACgQFLABACAiIAADAI=</HashCode>
+      <FileName>Forms\frmMain.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_20110375_HuynhDangKhoa_LoginForm.frmSignUp">
     <Position X="4" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IACgAAARADEGEIEAAAKCIEQCCABAIIAABAAAAAAIAgA=</HashCode>
-      <FileName>frmSignUp.cs</FileName>
+      <HashCode>IgCgCAARADUGEKGAgAKCIESCKAJAIKCABAAAAAAIggA=</HashCode>
+      <FileName>Forms\frmSignUp.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
