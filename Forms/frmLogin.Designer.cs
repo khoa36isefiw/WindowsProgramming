@@ -139,6 +139,7 @@
             this.chkBoxRemember.TabIndex = 12;
             this.chkBoxRemember.Text = "Remember";
             this.chkBoxRemember.UseVisualStyleBackColor = true;
+            this.chkBoxRemember.CheckedChanged += new System.EventHandler(this.chkBoxRemember_CheckedChanged);
             // 
             // radbHuman
             // 

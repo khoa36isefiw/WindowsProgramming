@@ -24,7 +24,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
            
             if (Properties.Settings.Default.taiKhoan != String.Empty)
             {
-                 txtUserName.Text = Properties.Settings.Default.taiKhoan;
+                txtUserName.Text = Properties.Settings.Default.taiKhoan;
                 txtPassword.Text = Properties.Settings.Default.matKhau;
             }
         }
@@ -111,9 +111,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             }
         }
 
+        private void chkBoxRemember_CheckedChanged(object sender, EventArgs e)
+        {
 
-
-
-
+        }
     }
 }

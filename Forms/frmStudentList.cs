@@ -37,7 +37,6 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             picCol = (DataGridViewImageColumn)dataGVStudentList.Columns[10];    
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
             dataGVStudentList.AllowUserToAddRows = false;
-
         }
 
 
