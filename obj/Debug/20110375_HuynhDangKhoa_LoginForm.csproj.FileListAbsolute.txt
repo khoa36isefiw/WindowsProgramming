@@ -154,3 +154,11 @@ C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Window
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.frmEditCourse.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.frmRemovecourse.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.ListCourse.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.ManageCoursesForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.PrintCourseForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Forms.AddCourseForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Score.AddScore.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Score.RemoveScore.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Score.AverageScore.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Score.ManageScore.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Score.Print.resources

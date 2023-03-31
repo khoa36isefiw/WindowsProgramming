@@ -38,6 +38,8 @@
             this.lblPeriod = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblSemester = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCourseID
@@ -125,17 +127,37 @@
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.Location = new System.Drawing.Point(117, 318);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(217, 59);
+            this.btnAdd.Size = new System.Drawing.Size(286, 59);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(394, 29);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(64, 26);
+            this.comboBox1.TabIndex = 9;
+            // 
+            // lblSemester
+            // 
+            this.lblSemester.AutoSize = true;
+            this.lblSemester.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSemester.Location = new System.Drawing.Point(279, 30);
+            this.lblSemester.Name = "lblSemester";
+            this.lblSemester.Size = new System.Drawing.Size(104, 25);
+            this.lblSemester.TabIndex = 10;
+            this.lblSemester.Text = "Semester";
+            // 
             // frmAddCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 402);
+            this.ClientSize = new System.Drawing.Size(482, 402);
+            this.Controls.Add(this.lblSemester);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblPeriod);
@@ -167,5 +189,7 @@
         private System.Windows.Forms.Label lblPeriod;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblSemester;
     }
 }

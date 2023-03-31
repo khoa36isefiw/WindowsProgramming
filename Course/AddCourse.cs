@@ -25,7 +25,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Forms
          
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //try
+            try
             {
 
 
@@ -67,7 +67,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Forms
 
               
             }
-            //catch { MessageBox.Show("Vui Lòng Nhập Đầy Đủ Thông Tin", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
+            catch { MessageBox.Show("Vui Lòng Nhập Đầy Đủ Thông Tin", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning); }
 
             //int id = Convert.ToInt32(txtCourseID.Text);
             //string nameCourse = txtCourseName.Text;

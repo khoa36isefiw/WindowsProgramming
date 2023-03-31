@@ -164,5 +164,22 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
             }
 
         }
+
+        string execCount(string querry)
+        {
+            SqlCommand cmd = new SqlCommand(querry, mydb.getConnection);
+            mydb.openConnection();
+            string count = cmd.ExecuteScalar().ToString();
+            //string count = command.ExecuteNonQuery().ToString();
+            mydb.closeConnection();
+            return count;
+        }
+
+        public string totalCourse()
+        {
+            return execCount("SELECT COUNT(*) FROM Course");
+        }
+        
+
     }
 }

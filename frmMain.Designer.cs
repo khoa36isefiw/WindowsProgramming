@@ -44,6 +44,7 @@
             this.mnuStudent_Find = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCourse = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCourse_Add = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCOURSE_List = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCourse_Remove = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCourse_Edit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCourse_Manage = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +54,13 @@
             this.mnuManageUser_Account = new System.Windows.Forms.ToolStripMenuItem();
             this.picBackGround = new System.Windows.Forms.PictureBox();
             this.btnlogOut = new System.Windows.Forms.Button();
-            this.mnuCOURSE_List = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSCORE_Add = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSCORE_Remove = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSCORE_Manage = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSCORE_AverageScore = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.mnuSCORE_Print = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuSCORE_Result = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBackGround)).BeginInit();
             this.SuspendLayout();
@@ -185,38 +192,55 @@
             // mnuCourse_Add
             // 
             this.mnuCourse_Add.Name = "mnuCourse_Add";
-            this.mnuCourse_Add.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Add.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Add.Text = "Add Course";
             this.mnuCourse_Add.Click += new System.EventHandler(this.mnuCourse_Add_Click);
+            // 
+            // mnuCOURSE_List
+            // 
+            this.mnuCOURSE_List.Name = "mnuCOURSE_List";
+            this.mnuCOURSE_List.Size = new System.Drawing.Size(201, 26);
+            this.mnuCOURSE_List.Text = "List Course";
+            this.mnuCOURSE_List.Click += new System.EventHandler(this.mnuCOURSE_List_Click);
             // 
             // mnuCourse_Remove
             // 
             this.mnuCourse_Remove.Name = "mnuCourse_Remove";
-            this.mnuCourse_Remove.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Remove.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Remove.Text = "Remove Course";
             this.mnuCourse_Remove.Click += new System.EventHandler(this.mnuCourse_Remove_Click);
             // 
             // mnuCourse_Edit
             // 
             this.mnuCourse_Edit.Name = "mnuCourse_Edit";
-            this.mnuCourse_Edit.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Edit.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Edit.Text = "Edit Course";
             this.mnuCourse_Edit.Click += new System.EventHandler(this.mnuCourse_Edit_Click);
             // 
             // mnuCourse_Manage
             // 
             this.mnuCourse_Manage.Name = "mnuCourse_Manage";
-            this.mnuCourse_Manage.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Manage.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Manage.Text = "Manage Courses";
+            this.mnuCourse_Manage.Click += new System.EventHandler(this.mnuCourse_Manage_Click);
             // 
             // mnuCourse_Print
             // 
             this.mnuCourse_Print.Name = "mnuCourse_Print";
-            this.mnuCourse_Print.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Print.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Print.Text = "Print";
+            this.mnuCourse_Print.Click += new System.EventHandler(this.mnuCourse_Print_Click);
             // 
             // mnuScore
             // 
+            this.mnuScore.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuSCORE_Add,
+            this.mnuSCORE_Remove,
+            this.mnuSCORE_Manage,
+            this.mnuSCORE_AverageScore,
+            this.toolStripMenuItem2,
+            this.mnuSCORE_Print,
+            this.mnuSCORE_Result});
             this.mnuScore.Name = "mnuScore";
             this.mnuScore.Size = new System.Drawing.Size(68, 50);
             this.mnuScore.Text = "SCORE";
@@ -258,12 +282,52 @@
             this.btnlogOut.UseVisualStyleBackColor = true;
             this.btnlogOut.Click += new System.EventHandler(this.btnlogOut_Click);
             // 
-            // mnuCOURSE_List
+            // mnuSCORE_Add
             // 
-            this.mnuCOURSE_List.Name = "mnuCOURSE_List";
-            this.mnuCOURSE_List.Size = new System.Drawing.Size(224, 26);
-            this.mnuCOURSE_List.Text = "List Course";
-            this.mnuCOURSE_List.Click += new System.EventHandler(this.mnuCOURSE_List_Click);
+            this.mnuSCORE_Add.Name = "mnuSCORE_Add";
+            this.mnuSCORE_Add.Size = new System.Drawing.Size(257, 26);
+            this.mnuSCORE_Add.Text = "Add Score";
+            this.mnuSCORE_Add.Click += new System.EventHandler(this.mnuSCORE_Add_Click);
+            // 
+            // mnuSCORE_Remove
+            // 
+            this.mnuSCORE_Remove.Name = "mnuSCORE_Remove";
+            this.mnuSCORE_Remove.Size = new System.Drawing.Size(257, 26);
+            this.mnuSCORE_Remove.Text = "Remove Score";
+            this.mnuSCORE_Remove.Click += new System.EventHandler(this.mnuSCORE_Remove_Click);
+            // 
+            // mnuSCORE_Manage
+            // 
+            this.mnuSCORE_Manage.Name = "mnuSCORE_Manage";
+            this.mnuSCORE_Manage.Size = new System.Drawing.Size(257, 26);
+            this.mnuSCORE_Manage.Text = "Manage Score";
+            this.mnuSCORE_Manage.Click += new System.EventHandler(this.mnuSCORE_Manage_Click);
+            // 
+            // mnuSCORE_AverageScore
+            // 
+            this.mnuSCORE_AverageScore.Name = "mnuSCORE_AverageScore";
+            this.mnuSCORE_AverageScore.Size = new System.Drawing.Size(257, 26);
+            this.mnuSCORE_AverageScore.Text = "Average Score By Course";
+            this.mnuSCORE_AverageScore.Click += new System.EventHandler(this.mnuSCORE_AverageScore_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(254, 6);
+            // 
+            // mnuSCORE_Print
+            // 
+            this.mnuSCORE_Print.Name = "mnuSCORE_Print";
+            this.mnuSCORE_Print.Size = new System.Drawing.Size(257, 26);
+            this.mnuSCORE_Print.Text = "Print";
+            this.mnuSCORE_Print.Click += new System.EventHandler(this.mnuSCORE_Print_Click);
+            // 
+            // mnuSCORE_Result
+            // 
+            this.mnuSCORE_Result.Name = "mnuSCORE_Result";
+            this.mnuSCORE_Result.Size = new System.Drawing.Size(257, 26);
+            this.mnuSCORE_Result.Text = "Result";
+            this.mnuSCORE_Result.Click += new System.EventHandler(this.mnuSCORE_Result_Click);
             // 
             // frmMain
             // 
@@ -312,5 +376,12 @@
         private System.Windows.Forms.ToolStripMenuItem mnuCourse_Manage;
         private System.Windows.Forms.ToolStripMenuItem mnuCourse_Print;
         private System.Windows.Forms.ToolStripMenuItem mnuCOURSE_List;
+        private System.Windows.Forms.ToolStripMenuItem mnuSCORE_Add;
+        private System.Windows.Forms.ToolStripMenuItem mnuSCORE_Remove;
+        private System.Windows.Forms.ToolStripMenuItem mnuSCORE_Manage;
+        private System.Windows.Forms.ToolStripMenuItem mnuSCORE_AverageScore;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem mnuSCORE_Print;
+        private System.Windows.Forms.ToolStripMenuItem mnuSCORE_Result;
     }
 }

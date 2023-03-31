@@ -58,6 +58,7 @@
             this.btnFind = new System.Windows.Forms.Button();
             this.lblHome = new System.Windows.Forms.Label();
             this.cboHomeTown = new System.Windows.Forms.ComboBox();
+            this.btnAddCourse = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picStudent)).BeginInit();
             this.grboGender.SuspendLayout();
             this.SuspendLayout();
@@ -409,11 +410,21 @@
             this.cboHomeTown.TabIndex = 76;
             this.cboHomeTown.TextChanged += new System.EventHandler(this.cboHomeTown_TextChanged);
             // 
+            // btnAddCourse
+            // 
+            this.btnAddCourse.Location = new System.Drawing.Point(297, 487);
+            this.btnAddCourse.Name = "btnAddCourse";
+            this.btnAddCourse.Size = new System.Drawing.Size(163, 56);
+            this.btnAddCourse.TabIndex = 77;
+            this.btnAddCourse.Text = "Add Course";
+            this.btnAddCourse.UseVisualStyleBackColor = true;
+            // 
             // frmUpdateDeleteStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 552);
+            this.Controls.Add(this.btnAddCourse);
             this.Controls.Add(this.cboHomeTown);
             this.Controls.Add(this.lblHome);
             this.Controls.Add(this.btnFind);
@@ -486,5 +497,6 @@
         public System.Windows.Forms.TextBox txtStudentID;
         private System.Windows.Forms.Label lblHome;
         internal System.Windows.Forms.ComboBox cboHomeTown;
+        private System.Windows.Forms.Button btnAddCourse;
     }
 }

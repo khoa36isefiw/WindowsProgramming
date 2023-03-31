@@ -193,5 +193,55 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             Course.ListCourse listC = new Course.ListCourse();
             listC.Show(this);
         }
+
+        private void mnuCourse_Manage_Click(object sender, EventArgs e)
+        {
+            Course.ManageCoursesForm manageC = new Course.ManageCoursesForm();
+            manageC.Show(this);
+        }
+
+        private void mnuCourse_Print_Click(object sender, EventArgs e)
+        {
+            Course.PrintCourseForm pritnC = new Course.PrintCourseForm();
+            pritnC.Show(this);
+
+        }
+
+        private void mnuSCORE_Add_Click(object sender, EventArgs e)
+        {
+            Score.AddScore addS = new Score.AddScore();
+            addS.Show(this);
+
+        }
+
+        private void mnuSCORE_Remove_Click(object sender, EventArgs e)
+        {
+            Score.RemoveScore removeS = new Score.RemoveScore();
+            removeS.Show(this);
+        }
+
+        private void mnuSCORE_Manage_Click(object sender, EventArgs e)
+        {
+            Score.ManageScore manageS = new Score.ManageScore();
+            manageS.Show(this);
+        }
+
+        private void mnuSCORE_AverageScore_Click(object sender, EventArgs e)
+        {
+            Score.AverageScore averageS = new Score.AverageScore();
+            averageS.Show(this);
+        }
+
+        private void mnuSCORE_Print_Click(object sender, EventArgs e)
+        {
+            Score.Print printS = new Score.Print();
+            printS.Show(this);
+        }
+
+        private void mnuSCORE_Result_Click(object sender, EventArgs e)
+        {
+            Score.RemoveScore resultS = new Score.RemoveScore();
+            resultS.Show(this);
+        }
     }
 }
