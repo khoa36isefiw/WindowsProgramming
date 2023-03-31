@@ -26,6 +26,8 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         private void frmFindStudent_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'studentDataSet.student' table. You can move, or remove it, as needed.
+            //this.studentTableAdapter1.Fill(this.studentDataSet.student);
             // TODO: This line of code loads data into the 'qLSVDataSet.student' table. You can move, or remove it, as needed.
             //this.studentTableAdapter.Fill(this.qLSVDataSet.student);
         }
@@ -39,12 +41,12 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     #region Bỏ Comment vẫn chạy được, Nhưng chỉ có mỗi ID
                     //load dữ liệu của sinh viên từ database vào datagridView -bằng bảng sinh viên
 
-                    SqlCommand command = new SqlCommand("SELECT * FROM student WHERE ID LIKE '%" + txtFind.Text + "%'");
+                    SqlCommand command = new SqlCommand("SELECT * FROM student WHERE MSSV LIKE '%" + txtFind.Text + "%'");
                     DataTable table = student.getStudents(command);
                     //SqlCommand cmd = new SqlCommand("SELECT * FROM student Where CONCAT(ID,FirstName,LastName,Address) LIKE '%" + txtSearch.Text + "%'");
                     try
                     {
-                        // find by ID
+                        // find by MSSV
 
 
                         if (table.Rows.Count > 0)
@@ -56,7 +58,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
 
                             // columns[10] là tương ứng cột picture trong database
-                            picCol = (DataGridViewImageColumn)dataGRV_StudentFound.Columns[10];
+                            picCol = (DataGridViewImageColumn)dataGRV_StudentFound.Columns[11];
                             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
                             dataGRV_StudentFound.AllowUserToAddRows = false;
                         }
@@ -69,7 +71,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
 
                             // columns[10] là tương ứng cột picture trong database
-                            picCol = (DataGridViewImageColumn)dataGRV_StudentFound.Columns[10];
+                            picCol = (DataGridViewImageColumn)dataGRV_StudentFound.Columns[11];
                             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
                             dataGRV_StudentFound.AllowUserToAddRows = false;
                             MessageBox.Show("Không tìm thấy sinh viên này!", "Find Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -77,7 +79,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     }
                     catch (Exception err)
                     {
-                        MessageBox.Show("Bạn chưa điền ID nên không tìm được sinh viên", "Find Student", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Bạn chưa điền MSSV nên không tìm được sinh viên", "Find Student", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
 
                     #endregion
@@ -130,9 +132,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     //}
                     #endregion
 
-
+                    string findFirstName = txtFind.Text;
                     #region Cách 2
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM student Where FirstName LIKE '%" + txtFind.Text + "%'");
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM student Where FirstName LIKE '%" + findFirstName + "%'");
                     fillGrid(cmd);
                     #endregion
 
@@ -178,11 +180,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             // load dữ liệu của sinh viên từ database vào  datagridView - bằng bảng sinh viên
             dataGRV_StudentFound.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            dataGRV_StudentFound.RowTemplate.Height = 40;
+            dataGRV_StudentFound.RowTemplate.Height = 20;
             dataGRV_StudentFound.DataSource = student.getStudents(cmd);
 
-            // columns[10] là tương ứng cột picture trong database
-            picCol = (DataGridViewImageColumn)dataGRV_StudentFound.Columns[10];
+            // columns[11] là tương ứng cột picture trong database
+            picCol = (DataGridViewImageColumn)dataGRV_StudentFound.Columns[11];
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
             dataGRV_StudentFound.AllowUserToAddRows = false;
 
@@ -191,7 +193,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         #endregion
 
         
-
+        //set default text for combobox
         private void cboFind_TextChanged(object sender, EventArgs e)
         {
             if (cboFind.SelectedIndex < 0)
@@ -209,10 +211,37 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             // then click the Show Image button to display the image
         private void btnShowImage_Click(object sender, EventArgs e)
         {
-            byte[] pic;
-            pic = (byte[])dataGRV_StudentFound.CurrentRow.Cells[10].Value;
-            MemoryStream picture = new MemoryStream(pic);
-            pictureBox1.Image = Image.FromStream(picture);
+            int outNek;
+            try  
+            {
+                //foreach (DataGridViewRow rw in this.dataGRV_StudentFound.Rows)
+                //{
+                //    for (int i = 0; i < rw.Cells.Count; i++)
+                //    {
+                //        //if (rw.Cells[i].Value == null || rw.Cells[i].Value == DBNull.Value || String.IsNullOrWhiteSpace(rw.Cells[i].Value.ToString()))
+                //        //{
+                //        //    MessageBox.Show("Luân bảo là Empty! Sao mà click được!");
+                //        //    outNek = rw.Cells.Count;
+                //        //    break;
+                //        //}
+                //        //else
+                //        {
+
+                //        }
+                //    }
+                //}
+                byte[] pic;
+                pic = (byte[])dataGRV_StudentFound.CurrentRow.Cells[11].Value;
+                MemoryStream picture = new MemoryStream(pic);
+                pictureBox1.Image = Image.FromStream(picture);
+
+            }
+            catch(Exception err)
+            {
+                MessageBox.Show("Luân bảo là Empty!");
+
+            }
+
         }
 
        

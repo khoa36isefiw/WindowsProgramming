@@ -45,7 +45,6 @@
             this.radbFemale = new System.Windows.Forms.RadioButton();
             this.radbMale = new System.Windows.Forms.RadioButton();
             this.picStudent = new System.Windows.Forms.PictureBox();
-            this.pictBackgroundAddStudent = new System.Windows.Forms.PictureBox();
             this.txtStudentID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
@@ -57,9 +56,12 @@
             this.txtMajor = new Guna.UI2.WinForms.Guna2TextBox();
             this.cboDepartment = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnUpImage = new Guna.UI2.WinForms.Guna2Button();
+            this.lblHomeTown = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cboHomeTown = new System.Windows.Forms.ComboBox();
             this.grboGender.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picStudent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBackgroundAddStudent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblStuID
@@ -68,7 +70,7 @@
             this.lblStuID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(31)))), ((int)(((byte)(47)))));
             this.lblStuID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuID.Location = new System.Drawing.Point(8, 25);
+            this.lblStuID.Location = new System.Drawing.Point(7, 22);
             this.lblStuID.Name = "lblStuID";
             this.lblStuID.Size = new System.Drawing.Size(88, 20);
             this.lblStuID.TabIndex = 0;
@@ -80,7 +82,7 @@
             this.lblStuFName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(77)))));
             this.lblStuFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuFName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuFName.Location = new System.Drawing.Point(8, 55);
+            this.lblStuFName.Location = new System.Drawing.Point(7, 73);
             this.lblStuFName.Name = "lblStuFName";
             this.lblStuFName.Size = new System.Drawing.Size(92, 20);
             this.lblStuFName.TabIndex = 1;
@@ -92,7 +94,7 @@
             this.lblStuLName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(77)))));
             this.lblStuLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuLName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuLName.Location = new System.Drawing.Point(8, 93);
+            this.lblStuLName.Location = new System.Drawing.Point(8, 131);
             this.lblStuLName.Name = "lblStuLName";
             this.lblStuLName.Size = new System.Drawing.Size(91, 20);
             this.lblStuLName.TabIndex = 2;
@@ -104,7 +106,7 @@
             this.lblStuBirthDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(77)))));
             this.lblStuBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuBirthDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuBirthDate.Location = new System.Drawing.Point(8, 132);
+            this.lblStuBirthDate.Location = new System.Drawing.Point(8, 186);
             this.lblStuBirthDate.Name = "lblStuBirthDate";
             this.lblStuBirthDate.Size = new System.Drawing.Size(81, 20);
             this.lblStuBirthDate.TabIndex = 3;
@@ -116,7 +118,7 @@
             this.lblStuGender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(55)))), ((int)(((byte)(85)))));
             this.lblStuGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuGender.Location = new System.Drawing.Point(8, 190);
+            this.lblStuGender.Location = new System.Drawing.Point(8, 256);
             this.lblStuGender.Name = "lblStuGender";
             this.lblStuGender.Size = new System.Drawing.Size(64, 20);
             this.lblStuGender.TabIndex = 4;
@@ -128,7 +130,7 @@
             this.lblStuPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(55)))), ((int)(((byte)(85)))));
             this.lblStuPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuPhone.Location = new System.Drawing.Point(8, 262);
+            this.lblStuPhone.Location = new System.Drawing.Point(8, 316);
             this.lblStuPhone.Name = "lblStuPhone";
             this.lblStuPhone.Size = new System.Drawing.Size(56, 20);
             this.lblStuPhone.TabIndex = 5;
@@ -140,7 +142,7 @@
             this.lblStuEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(56)))), ((int)(((byte)(91)))));
             this.lblStuEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuEmail.Location = new System.Drawing.Point(13, 316);
+            this.lblStuEmail.Location = new System.Drawing.Point(8, 371);
             this.lblStuEmail.Name = "lblStuEmail";
             this.lblStuEmail.Size = new System.Drawing.Size(51, 20);
             this.lblStuEmail.TabIndex = 6;
@@ -164,7 +166,7 @@
             this.lblStuDepart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(47)))), ((int)(((byte)(60)))));
             this.lblStuDepart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuDepart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuDepart.Location = new System.Drawing.Point(425, 64);
+            this.lblStuDepart.Location = new System.Drawing.Point(409, 73);
             this.lblStuDepart.Name = "lblStuDepart";
             this.lblStuDepart.Size = new System.Drawing.Size(97, 20);
             this.lblStuDepart.TabIndex = 8;
@@ -176,7 +178,7 @@
             this.lblStuMajor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(49)))), ((int)(((byte)(73)))));
             this.lblStuMajor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStuMajor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
-            this.lblStuMajor.Location = new System.Drawing.Point(436, 100);
+            this.lblStuMajor.Location = new System.Drawing.Point(436, 130);
             this.lblStuMajor.Name = "lblStuMajor";
             this.lblStuMajor.Size = new System.Drawing.Size(51, 20);
             this.lblStuMajor.TabIndex = 9;
@@ -198,7 +200,7 @@
             // 
             this.dtpDate.CustomFormat = "dd-MM-yyyy";
             this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDate.Location = new System.Drawing.Point(107, 132);
+            this.dtpDate.Location = new System.Drawing.Point(107, 184);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Size = new System.Drawing.Size(201, 22);
             this.dtpDate.TabIndex = 23;
@@ -208,7 +210,7 @@
             // 
             this.grboGender.Controls.Add(this.radbFemale);
             this.grboGender.Controls.Add(this.radbMale);
-            this.grboGender.Location = new System.Drawing.Point(107, 176);
+            this.grboGender.Location = new System.Drawing.Point(107, 242);
             this.grboGender.Name = "grboGender";
             this.grboGender.Size = new System.Drawing.Size(201, 40);
             this.grboGender.TabIndex = 24;
@@ -239,24 +241,12 @@
             // 
             // picStudent
             // 
-            this.picStudent.Location = new System.Drawing.Point(524, 142);
+            this.picStudent.Location = new System.Drawing.Point(524, 169);
             this.picStudent.Name = "picStudent";
             this.picStudent.Size = new System.Drawing.Size(201, 128);
             this.picStudent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picStudent.TabIndex = 25;
             this.picStudent.TabStop = false;
-            // 
-            // pictBackgroundAddStudent
-            // 
-            this.pictBackgroundAddStudent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictBackgroundAddStudent.Image = ((System.Drawing.Image)(resources.GetObject("pictBackgroundAddStudent.Image")));
-            this.pictBackgroundAddStudent.ImageLocation = "Ư";
-            this.pictBackgroundAddStudent.Location = new System.Drawing.Point(0, 0);
-            this.pictBackgroundAddStudent.Name = "pictBackgroundAddStudent";
-            this.pictBackgroundAddStudent.Size = new System.Drawing.Size(775, 528);
-            this.pictBackgroundAddStudent.TabIndex = 30;
-            this.pictBackgroundAddStudent.TabStop = false;
-            this.pictBackgroundAddStudent.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // txtStudentID
             // 
@@ -270,10 +260,10 @@
             this.txtStudentID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtStudentID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtStudentID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStudentID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtStudentID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStudentID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtStudentID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStudentID.Location = new System.Drawing.Point(107, 11);
+            this.txtStudentID.Location = new System.Drawing.Point(107, 13);
             this.txtStudentID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.PasswordChar = '\0';
@@ -295,10 +285,10 @@
             this.txtFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFirstName.Location = new System.Drawing.Point(107, 50);
+            this.txtFirstName.Location = new System.Drawing.Point(107, 63);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PasswordChar = '\0';
@@ -307,6 +297,7 @@
             this.txtFirstName.SelectedText = "";
             this.txtFirstName.Size = new System.Drawing.Size(201, 30);
             this.txtFirstName.TabIndex = 32;
+            this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
             // 
             // btnCancel
             // 
@@ -321,7 +312,7 @@
             this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(77)))));
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(213)))), ((int)(((byte)(41)))));
-            this.btnCancel.Location = new System.Drawing.Point(132, 368);
+            this.btnCancel.Location = new System.Drawing.Point(114, 415);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(130, 63);
             this.btnCancel.TabIndex = 33;
@@ -341,7 +332,7 @@
             this.btnAddStudent.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(50)))), ((int)(((byte)(77)))));
             this.btnAddStudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnAddStudent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(213)))), ((int)(((byte)(41)))));
-            this.btnAddStudent.Location = new System.Drawing.Point(559, 368);
+            this.btnAddStudent.Location = new System.Drawing.Point(565, 415);
             this.btnAddStudent.Name = "btnAddStudent";
             this.btnAddStudent.Size = new System.Drawing.Size(130, 63);
             this.btnAddStudent.TabIndex = 34;
@@ -360,10 +351,10 @@
             this.txtLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLastName.Location = new System.Drawing.Point(107, 88);
+            this.txtLastName.Location = new System.Drawing.Point(105, 131);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
@@ -372,6 +363,7 @@
             this.txtLastName.SelectedText = "";
             this.txtLastName.Size = new System.Drawing.Size(201, 30);
             this.txtLastName.TabIndex = 35;
+            this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
             // 
             // txtPhone
             // 
@@ -385,10 +377,10 @@
             this.txtPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhone.Location = new System.Drawing.Point(107, 248);
+            this.txtPhone.Location = new System.Drawing.Point(107, 302);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '\0';
@@ -397,6 +389,7 @@
             this.txtPhone.SelectedText = "";
             this.txtPhone.Size = new System.Drawing.Size(201, 34);
             this.txtPhone.TabIndex = 36;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // txtEmail
             // 
@@ -410,10 +403,10 @@
             this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(107, 306);
+            this.txtEmail.Location = new System.Drawing.Point(107, 357);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PasswordChar = '\0';
@@ -436,7 +429,7 @@
             this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.Location = new System.Drawing.Point(524, 11);
@@ -461,10 +454,10 @@
             this.txtMajor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMajor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMajor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMajor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMajor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMajor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMajor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMajor.Location = new System.Drawing.Point(524, 100);
+            this.txtMajor.Location = new System.Drawing.Point(524, 115);
             this.txtMajor.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtMajor.Name = "txtMajor";
             this.txtMajor.PasswordChar = '\0';
@@ -482,7 +475,7 @@
             this.cboDepartment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDepartment.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cboDepartment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cboDepartment.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDepartment.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDepartment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cboDepartment.FormattingEnabled = true;
             this.cboDepartment.ItemHeight = 30;
@@ -511,18 +504,119 @@
             this.btnUpImage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(0)))), ((int)(((byte)(82)))));
             this.btnUpImage.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpImage.ForeColor = System.Drawing.Color.White;
-            this.btnUpImage.Location = new System.Drawing.Point(536, 276);
+            this.btnUpImage.Location = new System.Drawing.Point(535, 316);
             this.btnUpImage.Name = "btnUpImage";
             this.btnUpImage.Size = new System.Drawing.Size(180, 30);
             this.btnUpImage.TabIndex = 41;
             this.btnUpImage.Text = "Upload Image";
             this.btnUpImage.Click += new System.EventHandler(this.btnUpImage_Click);
             // 
+            // lblHomeTown
+            // 
+            this.lblHomeTown.AutoSize = true;
+            this.lblHomeTown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(31)))), ((int)(((byte)(47)))));
+            this.lblHomeTown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomeTown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(235)))), ((int)(((byte)(59)))));
+            this.lblHomeTown.Location = new System.Drawing.Point(412, 371);
+            this.lblHomeTown.Name = "lblHomeTown";
+            this.lblHomeTown.Size = new System.Drawing.Size(94, 20);
+            this.lblHomeTown.TabIndex = 42;
+            this.lblHomeTown.Text = "HomeTown";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(775, 528);
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cboHomeTown
+            // 
+            this.cboHomeTown.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cboHomeTown.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cboHomeTown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboHomeTown.FormattingEnabled = true;
+            this.cboHomeTown.Items.AddRange(new object[] {
+            "An Giang",
+            "Bà Rịa - Vũng Tàu",
+            "Bắc Giang",
+            "Bắc Kạn",
+            "Bạc Liêu",
+            "Bắc Ninh",
+            "Bến Tre",
+            "Bình Định",
+            "Bình Dương",
+            "Bình Phước",
+            "Bình Thuận",
+            "Cà Mau",
+            "Cần Thơ ",
+            "Cao Bằng",
+            "Đà Nẵng",
+            "Đắk Lắk",
+            "Đắk Nông",
+            "Điện Biên",
+            "Đồng Nai",
+            "Đồng Tháp",
+            "Gia Lai",
+            "Hà Giang",
+            "Hải Dương",
+            "Hải Phòng",
+            "Hậu Giang",
+            "Hà Nam",
+            "Hà Nội ",
+            "Hà Tĩnh",
+            "Hòa Bình",
+            "Hồ Chí Minh",
+            "Hưng Yên",
+            "Khánh Hòa",
+            "Kiên Giang",
+            "Kon Tum",
+            "Lai Châu",
+            "Lâm Đồng",
+            "Lạng Sơn",
+            "Lào Cai",
+            "Long An",
+            "Nam Định",
+            "Nghệ An",
+            "Ninh Bình",
+            "Ninh Thuận",
+            "Phú Thọ",
+            "Phú Yên",
+            "Quảng Bình",
+            "Quảng Nam",
+            "Quảng Ngãi",
+            "Quảng Ninh",
+            "Quảng Trị",
+            "Sóc Trăng",
+            "Sơn La",
+            "Tây Ninh",
+            "Thái Bình",
+            "Thái Nguyên",
+            "Thanh Hóa",
+            "Thừa Thiên Huế",
+            "Tiền Giang",
+            "Trà Vinh",
+            "Tuyên Quang",
+            "Vĩnh Long",
+            "Vĩnh Phúc",
+            "Yên Bái"});
+            this.cboHomeTown.Location = new System.Drawing.Point(535, 371);
+            this.cboHomeTown.Name = "cboHomeTown";
+            this.cboHomeTown.Size = new System.Drawing.Size(180, 26);
+            this.cboHomeTown.TabIndex = 45;
+            this.cboHomeTown.SelectedIndexChanged += new System.EventHandler(this.cboHomeTown_SelectedIndexChanged);
+            this.cboHomeTown.TextChanged += new System.EventHandler(this.cboHomeTown_TextChanged);
+            // 
             // frmAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 528);
+            this.Controls.Add(this.cboHomeTown);
+            this.Controls.Add(this.lblHomeTown);
             this.Controls.Add(this.btnUpImage);
             this.Controls.Add(this.cboDepartment);
             this.Controls.Add(this.txtMajor);
@@ -548,7 +642,7 @@
             this.Controls.Add(this.lblStuFName);
             this.Controls.Add(this.lblStuID);
             this.Controls.Add(this.grboGender);
-            this.Controls.Add(this.pictBackgroundAddStudent);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "frmAddStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Student";
@@ -556,7 +650,7 @@
             this.grboGender.ResumeLayout(false);
             this.grboGender.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picStudent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictBackgroundAddStudent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -580,7 +674,6 @@
         private System.Windows.Forms.RadioButton radbFemale;
         private System.Windows.Forms.RadioButton radbMale;
         private System.Windows.Forms.PictureBox picStudent;
-        private System.Windows.Forms.PictureBox pictBackgroundAddStudent;
         private Guna.UI2.WinForms.Guna2TextBox txtStudentID;
         private Guna.UI2.WinForms.Guna2TextBox txtFirstName;
         private Guna.UI2.WinForms.Guna2Button btnCancel;
@@ -592,5 +685,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txtMajor;
         private Guna.UI2.WinForms.Guna2ComboBox cboDepartment;
         private Guna.UI2.WinForms.Guna2Button btnUpImage;
+        private System.Windows.Forms.Label lblHomeTown;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cboHomeTown;
     }
 }

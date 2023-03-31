@@ -56,6 +56,8 @@
             this.radbFemale = new System.Windows.Forms.RadioButton();
             this.radbMale = new System.Windows.Forms.RadioButton();
             this.btnFind = new System.Windows.Forms.Button();
+            this.lblHome = new System.Windows.Forms.Label();
+            this.cboHomeTown = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picStudent)).BeginInit();
             this.grboGender.SuspendLayout();
             this.SuspendLayout();
@@ -325,11 +327,95 @@
             this.btnFind.UseVisualStyleBackColor = false;
             this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
+            // lblHome
+            // 
+            this.lblHome.AutoSize = true;
+            this.lblHome.Location = new System.Drawing.Point(56, 348);
+            this.lblHome.Name = "lblHome";
+            this.lblHome.Size = new System.Drawing.Size(44, 16);
+            this.lblHome.TabIndex = 74;
+            this.lblHome.Text = "Home";
+            // 
+            // cboHomeTown
+            // 
+            this.cboHomeTown.FormattingEnabled = true;
+            this.cboHomeTown.Items.AddRange(new object[] {
+            "An Giang",
+            "Bà Rịa - Vũng Tàu",
+            "Bắc Giang",
+            "Bắc Kạn",
+            "Bạc Liêu",
+            "Bắc Ninh",
+            "Bến Tre",
+            "Bình Định",
+            "Bình Dương",
+            "Bình Phước",
+            "Bình Thuận",
+            "Cà Mau",
+            "Cần Thơ ",
+            "Cao Bằng",
+            "Đà Nẵng",
+            "Đắk Lắk",
+            "Đắk Nông",
+            "Điện Biên",
+            "Đồng Nai",
+            "Đồng Tháp",
+            "Gia Lai",
+            "Hà Giang",
+            "Hải Dương",
+            "Hải Phòng",
+            "Hậu Giang",
+            "Hà Nam",
+            "Hà Nội ",
+            "Hà Tĩnh",
+            "Hòa Bình",
+            "Hồ Chí Minh",
+            "Hưng Yên",
+            "Khánh Hòa",
+            "Kiên Giang",
+            "Kon Tum",
+            "Lai Châu",
+            "Lâm Đồng",
+            "Lạng Sơn",
+            "Lào Cai",
+            "Long An",
+            "Nam Định",
+            "Nghệ An",
+            "Ninh Bình",
+            "Ninh Thuận",
+            "Phú Thọ",
+            "Phú Yên",
+            "Quảng Bình",
+            "Quảng Nam",
+            "Quảng Ngãi",
+            "Quảng Ninh",
+            "Quảng Trị",
+            "Sóc Trăng",
+            "Sơn La",
+            "Tây Ninh",
+            "Thái Bình",
+            "Thái Nguyên",
+            "Thanh Hóa",
+            "Thừa Thiên Huế",
+            "Tiền Giang",
+            "Trà Vinh",
+            "Tuyên Quang",
+            "Vĩnh Long",
+            "Vĩnh Phúc",
+            "Yên Bái"});
+            this.cboHomeTown.Location = new System.Drawing.Point(155, 348);
+            this.cboHomeTown.Name = "cboHomeTown";
+            this.cboHomeTown.Size = new System.Drawing.Size(201, 24);
+            this.cboHomeTown.TabIndex = 76;
+            this.cboHomeTown.TextChanged += new System.EventHandler(this.cboHomeTown_TextChanged);
+            // 
             // frmUpdateDeleteStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 488);
+            this.ClientSize = new System.Drawing.Size(835, 552);
+            this.Controls.Add(this.cboHomeTown);
+            this.Controls.Add(this.lblHome);
             this.Controls.Add(this.btnFind);
             this.Controls.Add(this.cboDepartment);
             this.Controls.Add(this.dtpDate);
@@ -398,5 +484,7 @@
         internal System.Windows.Forms.RadioButton radbFemale;
         internal System.Windows.Forms.RadioButton radbMale;
         public System.Windows.Forms.TextBox txtStudentID;
+        private System.Windows.Forms.Label lblHome;
+        internal System.Windows.Forms.ComboBox cboHomeTown;
     }
 }

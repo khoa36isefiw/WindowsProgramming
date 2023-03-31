@@ -30,11 +30,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             SqlCommand command = new SqlCommand("SELECT * FROM student");
             dataGVStudentList.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            dataGVStudentList.RowTemplate.Height = 40;
+            dataGVStudentList.RowTemplate.Height = 20;
             dataGVStudentList.DataSource = student.getStudents(command);
 
             // columns[10] là tương ứng cột picture trong database
-            picCol = (DataGridViewImageColumn)dataGVStudentList.Columns[10];    
+            picCol = (DataGridViewImageColumn)dataGVStudentList.Columns[11];    
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
             dataGVStudentList.AllowUserToAddRows = false;
         }
@@ -49,32 +49,33 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             frmUpdateDeleteStudent updateRemoveStudent = new frmUpdateDeleteStudent();
             updateRemoveStudent.txtStudentID.Enabled = false;   // can't modify the student id when we click in datagridview
             
-            updateRemoveStudent.txtStudentID.Text = dataGVStudentList.CurrentRow.Cells[0].Value.ToString();
-            updateRemoveStudent.txtFirstName.Text = dataGVStudentList.CurrentRow.Cells[1].Value.ToString();
-            updateRemoveStudent.txtLastName.Text = dataGVStudentList.CurrentRow.Cells[2].Value.ToString();
-            updateRemoveStudent.dtpDate.Value = (DateTime)dataGVStudentList.CurrentRow.Cells[3].Value;
+            updateRemoveStudent.txtStudentID.Text = dataGVStudentList.CurrentRow.Cells[1].Value.ToString();
+            updateRemoveStudent.txtFirstName.Text = dataGVStudentList.CurrentRow.Cells[2].Value.ToString();
+            updateRemoveStudent.txtLastName.Text = dataGVStudentList.CurrentRow.Cells[3].Value.ToString();
+            updateRemoveStudent.dtpDate.Value = (DateTime)dataGVStudentList.CurrentRow.Cells[4].Value;
 
             // xét cột giới tính
-            if (dataGVStudentList.CurrentRow.Cells[4].Value.ToString() == "Female")
+            if (dataGVStudentList.CurrentRow.Cells[5].Value.ToString() == "Female")
             {
                 updateRemoveStudent.radbFemale.Checked = true;
 
 
             }
 
-            updateRemoveStudent.txtPhone.Text = dataGVStudentList.CurrentRow.Cells[5].Value.ToString();
-            updateRemoveStudent.txtEmail.Text = dataGVStudentList.CurrentRow.Cells[6].Value.ToString();
-            updateRemoveStudent.txtAddress.Text = dataGVStudentList.CurrentRow.Cells[7].Value.ToString();
-            updateRemoveStudent.cboDepartment.SelectedItem = dataGVStudentList.CurrentRow.Cells[8].Value.ToString();
-            updateRemoveStudent.txtMajor.Text = dataGVStudentList.CurrentRow.Cells[9].Value.ToString();
+            updateRemoveStudent.txtPhone.Text = dataGVStudentList.CurrentRow.Cells[6].Value.ToString();
+            updateRemoveStudent.txtEmail.Text = dataGVStudentList.CurrentRow.Cells[7].Value.ToString();
+            updateRemoveStudent.txtAddress.Text = dataGVStudentList.CurrentRow.Cells[8].Value.ToString();
+            updateRemoveStudent.cboDepartment.SelectedItem = dataGVStudentList.CurrentRow.Cells[9].Value.ToString();
+            updateRemoveStudent.txtMajor.Text = dataGVStudentList.CurrentRow.Cells[10].Value.ToString();
 
 
             // up image lên
             byte[] pic;
-            pic = (byte[])dataGVStudentList.CurrentRow.Cells[10].Value;
+            pic = (byte[])dataGVStudentList.CurrentRow.Cells[11].Value;
             MemoryStream picture = new MemoryStream(pic);
             updateRemoveStudent.picStudent.Image = Image.FromStream(picture);
-
+            updateRemoveStudent.cboHomeTown.SelectedItem = dataGVStudentList.CurrentRow.Cells[12].Value.ToString();
+            
             updateRemoveStudent.Show();
             
 
@@ -89,17 +90,17 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             SqlCommand command = new SqlCommand("SELECT * FROM student");
             dataGVStudentList.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            dataGVStudentList.RowTemplate.Height = 40;
+            dataGVStudentList.RowTemplate.Height = 20;
             dataGVStudentList.DataSource = student.getStudents(command);
 
             // columns[10] là tương ứng cột picture trong database
-            picCol = (DataGridViewImageColumn)dataGVStudentList.Columns[10];
+            picCol = (DataGridViewImageColumn)dataGVStudentList.Columns[11];
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
             dataGVStudentList.AllowUserToAddRows = false;
 
 
             // tự động sắp xếp tăng dần/ giảm dần 
-            dataGVStudentList.Sort(dataGVStudentList.Columns[0], ListSortDirection.Ascending);
+            dataGVStudentList.Sort(dataGVStudentList.Columns[1], ListSortDirection.Ascending);
 
 
         }
@@ -108,6 +109,26 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         {
             frmFindStudent findStu = new frmFindStudent();
             findStu.Show();
+        }
+
+        // show ảnh
+        private void btnShowPicture_Click(object sender, EventArgs e)
+        {
+            try
+            {
+              
+                byte[] pic;
+                pic = (byte[])dataGVStudentList.CurrentRow.Cells[11].Value;
+                MemoryStream picture = new MemoryStream(pic);
+                pictureBoxShow.Image = Image.FromStream(picture);
+
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Luân bảo là Empty!");
+
+            }
+
         }
     }
 }

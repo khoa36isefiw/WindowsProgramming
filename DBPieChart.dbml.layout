@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBPieChart">
+  <DataContextMoniker Name="/DBPieChartDataContext" />
+  <nestedChildShapes>
+    <classShape Id="cf9774e2-f9eb-43cb-aa6a-276d1d468895" absoluteBounds="1.25, 1, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/DBPieChartDataContext/totalAgeByView" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4b60da11-a061-4897-a1b6-fa420c086bf0" absoluteBounds="1.2650000000000001, 1.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

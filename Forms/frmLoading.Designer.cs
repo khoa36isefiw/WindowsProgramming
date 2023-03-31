@@ -45,7 +45,7 @@
             // progressBarLoading
             // 
             this.progressBarLoading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.progressBarLoading.Location = new System.Drawing.Point(47, 83);
+            this.progressBarLoading.Location = new System.Drawing.Point(54, 64);
             this.progressBarLoading.Name = "progressBarLoading";
             this.progressBarLoading.Size = new System.Drawing.Size(236, 23);
             this.progressBarLoading.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -56,7 +56,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(366, 164);
+            this.ClientSize = new System.Drawing.Size(366, 128);
             this.ControlBox = false;
             this.Controls.Add(this.progressBarLoading);
             this.Controls.Add(this.lblLoading);

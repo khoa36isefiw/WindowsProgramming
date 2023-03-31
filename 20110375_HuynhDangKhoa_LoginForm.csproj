@@ -42,6 +42,21 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Google.Apis, Version=1.60.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.60.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.60.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Auth.1.60.0\lib\net461\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.60.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Auth.1.60.0\lib\net461\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.60.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.Core.1.60.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.60.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Apis.1.60.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -65,11 +80,15 @@
       <HintPath>packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Serialization" />
@@ -90,6 +109,36 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Course\COURSE.cs" />
+    <Compile Include="Course\EditCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\EditCourse.Designer.cs">
+      <DependentUpon>EditCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course\ListCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\ListCourse.Designer.cs">
+      <DependentUpon>ListCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course\Removecourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\Removecourse.Designer.cs">
+      <DependentUpon>Removecourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBPieChart.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBPieChart.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Course\AddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\AddCourse.Designer.cs">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmAddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,17 +169,11 @@
     <Compile Include="Forms\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmMain.cs">
+    <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmMain.Designer.cs">
+    <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmResetPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmResetPassword.Designer.cs">
-      <DependentUpon>frmResetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmSignUp.cs">
       <SubType>Form</SubType>
@@ -180,11 +223,11 @@
     <Compile Include="Forms\frmUpdateDeleteStudent.Designer.cs">
       <DependentUpon>frmUpdateDeleteStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmImageShow.cs">
+    <Compile Include="frmStatisticsPieChart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmImageShow.Designer.cs">
-      <DependentUpon>frmImageShow.cs</DependentUpon>
+    <Compile Include="frmStatisticsPieChart.Designer.cs">
+      <DependentUpon>frmStatisticsPieChart.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.Context.cs">
       <AutoGen>True</AutoGen>
@@ -213,10 +256,37 @@
       <DependentUpon>QLSVDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Classes\STUDENT.cs" />
+    <Compile Include="QLSVDataSetFull.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVDataSetFull.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="totalBirthYearStudent_Result.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Classes\USER.cs" />
+    <Compile Include="UserDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Course\AddCourse.resx">
+      <DependentUpon>AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\EditCourse.resx">
+      <DependentUpon>EditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\ListCourse.resx">
+      <DependentUpon>ListCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\Removecourse.resx">
+      <DependentUpon>Removecourse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAddStudent.resx">
       <DependentUpon>frmAddStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,11 +302,8 @@
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmMain.resx">
+    <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmResetPassword.resx">
-      <DependentUpon>frmResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSignUp.resx">
       <DependentUpon>frmSignUp.cs</DependentUpon>
@@ -262,8 +329,8 @@
     <EmbeddedResource Include="Forms\frmUpdateDeleteStudent.resx">
       <DependentUpon>frmUpdateDeleteStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmImageShow.resx">
-      <DependentUpon>frmImageShow.cs</DependentUpon>
+    <EmbeddedResource Include="frmStatisticsPieChart.resx">
+      <DependentUpon>frmStatisticsPieChart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -279,6 +346,14 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="DBPieChart.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DBPieChart.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBPieChart.dbml.layout">
+      <DependentUpon>DBPieChart.dbml</DependentUpon>
+    </None>
     <None Include="Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
@@ -303,13 +378,44 @@
     <None Include="QLSVDataSet.xss">
       <DependentUpon>QLSVDataSet.xsd</DependentUpon>
     </None>
+    <None Include="QLSVDataSetFull.xsc">
+      <DependentUpon>QLSVDataSetFull.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDataSetFull.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVDataSetFull.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVDataSetFull.xss">
+      <DependentUpon>QLSVDataSetFull.xsd</DependentUpon>
+    </None>
+    <None Include="StudentDataSet.xsc">
+      <DependentUpon>StudentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentDataSet.xss">
+      <DependentUpon>StudentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet.xsc">
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserDataSet.xss">
+      <DependentUpon>UserDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -321,8 +427,67 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <Content Include="Resources\aArit.jpg" />
+    <Content Include="Resources\aloneInMountain.jpg" />
+    <Content Include="Resources\amane.jpg" />
+    <Content Include="Resources\angryjpg.jpg" />
+    <Content Include="Resources\attack.png" />
+    <Content Include="Resources\AuroraBorealis.jpg" />
+    <Content Include="Resources\batNgoChuaCat.jpg" />
+    <Content Include="Resources\borderRadius1.jpg" />
+    <Content Include="Resources\borderRadius2.jpg" />
+    <Content Include="Resources\borderRadius3.png" />
+    <Content Include="Resources\catNextToWindow.jpg" />
+    <Content Include="Resources\eyeHide.ico" />
+    <Content Include="Resources\eyeShow.ico" />
+    <Content Include="Resources\finshi.jpg" />
+    <Content Include="Resources\guitar.png" />
+    <Content Include="Resources\HiThere.jpg" />
+    <Content Include="Resources\husky10.jpg" />
+    <Content Include="Resources\husky11.jpg" />
+    <Content Include="Resources\husky2.jpg" />
+    <Content Include="Resources\husky3.jpg" />
+    <Content Include="Resources\husky4.jfif" />
+    <Content Include="Resources\husky7.jpg" />
+    <Content Include="Resources\husky8.jpg" />
+    <Content Include="Resources\husky9.jpg" />
+    <Content Include="Resources\huskyandSunflower.jpg" />
+    <Content Include="Resources\imImage.jpg" />
+    <Content Include="Resources\info.jpg" />
+    <Content Include="Resources\landcapse.png" />
+    <Content Include="Resources\landscape.jpg" />
+    <Content Include="Resources\Mahiru.jpg" />
+    <Content Include="Resources\MahiruEvent.jpg" />
+    <Content Include="Resources\MegaLandscape.jpg" />
+    <Content Include="Resources\midnight.png" />
+    <Content Include="Resources\MinimalistMountain.jpg" />
+    <Content Include="Resources\moonPhoto.jpg" />
+    <Content Include="Resources\moutainLandscape.jpg" />
+    <Content Include="Resources\rain.png" />
+    <Content Include="Resources\Red-panda_1.png" />
+    <Content Include="Resources\Refresh.png" />
+    <Content Include="Resources\refresh2.png" />
+    <Content Include="Resources\refresh3.png" />
+    <Content Include="Resources\rungthongLandscapse.jpg" />
+    <Content Include="Resources\seeYou.png" />
+    <Content Include="Resources\shiba.png" />
+    <Content Include="Resources\shiba3.jpg" />
+    <Content Include="Resources\shiba4.jpg" />
+    <Content Include="Resources\sky.jpg" />
+    <Content Include="Resources\Sleep.png" />
+    <Content Include="Resources\SnowCrystal.png" />
+    <Content Include="Resources\snowMahiru.jpg" />
+    <Content Include="Resources\st..jpg" />
+    <Content Include="Resources\star.png" />
+    <Content Include="Resources\starrySkyOverMoutain.jpg" />
+    <Content Include="Resources\student_10.Jpeg" />
+    <Content Include="Resources\student_201.Jpeg" />
+    <Content Include="Resources\study.jpg" />
+    <Content Include="Resources\trash.png" />
+    <Content Include="Resources\west.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,15 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using Google.Apis.Auth.OAuth2;
+using Google.Apis.Util.Store;
 using System.Windows.Forms;
+using Google.Apis.Util;
+using System.Threading;
 
 namespace _20110375_HuynhDangKhoa_LoginForm
 {
     public partial class frmLogin : Form
     {
+
+        private static string[] Scopes = { "email", "profile" };
+        private static string ApplicationName = "StudentManagementApplication";
+        UserCredential credential;
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            CreateHelpProvider();
+            toolTipUserName.SetToolTip(txtUserName, "Nhập tên đăng nhập");
+            toolTipPass.SetToolTip(txtPassword, "Nhập mật khẩu");
         }
 
         public frmLogin()
@@ -27,6 +37,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 txtUserName.Text = Properties.Settings.Default.taiKhoan;
                 txtPassword.Text = Properties.Settings.Default.matKhau;
             }
+
         }
    
 
@@ -115,5 +126,88 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         {
 
         }
+
+
+        // login by google
+        private void btnGG_Click(object sender, EventArgs e)
+        {
+
+            credential =  GoogleWebAuthorizationBroker.AuthorizeAsync(
+                new ClientSecrets
+                {
+                    //ClientId = "636865955755-8crf1u7s24931uan92rd535k4a0m4p17.apps.googleusercontent.com",
+                    //ClientSecret = "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"
+                    ClientId = "636865955755-mpt5hpmas6fqqeboc4k2da1n2hn2mgus.apps.googleusercontent.com",
+                    ClientSecret = "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"
+                },
+                Scopes,
+                "user",
+                System.Threading.CancellationToken.None,
+                new FileDataStore("Drive.Auth.Store")).Result;
+
+            if (credential != null )
+            {
+                MessageBox.Show("Nó chạy vào đây nè!");
+                // If authentication succeeds, open the main form
+                var mainForm = new frmMain();
+                
+                mainForm.Show();
+            }
+            else
+            {
+                //// If authentication fails, show an error message
+                //MessageBox.Show("Login failed. Please try again.");
+                // If authentication fails or token is expired, request new authorization
+                
+                {
+                    // If reauthorization fails, show an error message
+                    MessageBox.Show("Login failed. Please try again.");
+                }
+
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+        private HelpProvider hlpProvider;
+
+        private void CreateHelpProvider()
+
+        {
+
+            hlpProvider = new System.Windows.Forms.HelpProvider();
+
+            hlpProvider.SetShowHelp(txtUserName, true);
+
+            hlpProvider.SetHelpString(txtUserName, "Enter a valid text here.");
+
+
+
+            hlpProvider.SetShowHelp(btnLogin, true);
+
+            hlpProvider.SetHelpString(btnLogin, "Click this button to Login Systems.");
+
+
+
+            // Help file
+
+            hlpProvider.HelpNamespace = "helpFile.chm";
+
+
+
+            hlpProvider.SetHelpNavigator(txtUserName, HelpNavigator.TableOfContents);
+
+
+
+        }
+
+        
     }
 }

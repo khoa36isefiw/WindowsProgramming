@@ -35,6 +35,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             if (string.IsNullOrEmpty(txtStudentID.Text)|| txtFirstName.Text.Trim() == "" 
                 ||txtLastName.Text.Trim() == "" 
                 || cboDepartment.SelectedItem== null
+                || cboHomeTown.SelectedItem == null
                 || txtPhone.Text.Trim() ==""
                 || txtEmail.Text.Trim() == ""
                 || txtAddress.Text.Trim() == ""
@@ -167,7 +168,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             #region Vùng check 
             try
             {
-                int id = Convert.ToInt32(txtStudentID.Text);
+                string id = (txtStudentID.Text);
                 string fName = txtFirstName.Text;
                 string lName = txtLastName.Text;
                 DateTime bdate = dtpDate.Value;
@@ -176,9 +177,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 string email = txtEmail.Text;
                 string addrress = txtAddress.Text;
                 string departMent = cboDepartment.SelectedItem.ToString();
+                string home = cboHomeTown.SelectedItem.ToString();
                 string major = txtMajor.Text;
                 MemoryStream pic = new MemoryStream();
-
                 int born_year = dtpDate.Value.Year;
                 int this_year = DateTime.Now.Year;
 
@@ -197,7 +198,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     picStudent.Image.Save(pic, picStudent.Image.RawFormat);
 
                     // kiểm tra student id có tồn tại hay không
-                    SqlCommand command = new SqlCommand("SELECT * FROM student WHERE ID = " + id);
+                    SqlCommand command = new SqlCommand("SELECT * FROM student WHERE MSSV = @id");
+                    
+                    //
+                    command.Parameters.Add("@id", SqlDbType.NChar).Value = id;
+
                     DataTable table = student.getStudents(command);
 
                     if (table.Rows.Count > 0)   // sinh viên tồn tại
@@ -206,7 +211,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     }
 
 
-                    else if (!checkPhoneNumber() && txtPhone.Text.Length > 10)
+                     else if (txtPhone.Text.Length > 0 && txtPhone.Text.Length < 10)
                     {
                         MessageBox.Show("Số điện thoại phải nhập đủ 10 số !!!!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -229,7 +234,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     // student id chưa tồn tại 
                     else
                     {
-                        if (student.insertStudent(id, fName, lName, bdate, gender, phoneNumber, email, addrress, departMent, major, pic))
+                        if (student.insertStudent(id, fName, lName, bdate, gender, phoneNumber, email, addrress, departMent, major, pic, home))
                         {
                             MessageBox.Show("Thêm sinh viên thành công", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
@@ -254,7 +259,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             }
             catch (Exception)
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ các thông tin của sinh viên2", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập đầy đủ các thông tin của sinh viên", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
 
@@ -273,6 +278,72 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+            // Define regular expression pattern
+            string pattern = @"^[a-zA-Z\s\u0080-\uFFFF]*$";
+
+
+            // Check if input matches pattern
+            if (!Regex.IsMatch(txtFirstName.Text, pattern))
+            {
+                // Display error message
+                MessageBox.Show("Input can only contain letters and spaces.");
+                txtFirstName.Text = ""; // Clear the textbox
+            }
+        }
+
+        private void txtLastName_TextChanged(object sender, EventArgs e)
+        {
+            // Define regular expression pattern
+            string pattern = @"^[a-zA-Z\s\u0080-\uFFFF]*$";
+
+
+            // Check if input matches pattern
+            if (!Regex.IsMatch(txtLastName.Text, pattern))
+            {
+                // Display error message
+                MessageBox.Show("Input can only contain letters and spaces.");
+                txtLastName.Text = ""; // Clear the textbox
+            }
+        }
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+            // Define regular expression pattern
+            string pattern = @"^[^a-zA-Z]*$";
+
+
+            // Check if input matches pattern
+            if (!Regex.IsMatch(txtPhone.Text, pattern) )
+            {
+                if(txtPhone.Text.Length != 10)
+                {
+                    // Display error message
+                    MessageBox.Show("Phone number must be exactly 10 digits and cannot contain letters or special characters.");
+                    txtPhone.Text = ""; // Clear the textbox
+                }
+            
+            }
+        }
+
+        private void cboHomeTown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboHomeTown_TextChanged(object sender, EventArgs e)
+        {
+            // Kiểm tra xem chuỗi văn bản trong ComboBox có chứa số hay không
+            if (cboHomeTown.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("Không được nhập số trong ComboBox!", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboHomeTown.SelectedItem = null;
+            }
 
         }
     }

@@ -12,14 +12,14 @@ namespace _20110375_HuynhDangKhoa_LoginForm
     public class STUDENT
     {
         MY_DB mydb = new MY_DB();
-        public bool insertStudent (int ID, string fName, string lName, DateTime birthDate, string Gender, int phoneNum, 
-            string Email ,string address, string departMent, string Major ,MemoryStream picture)
+        public bool insertStudent (string id, string fName, string lName, DateTime birthDate, string Gender, int phoneNum, 
+            string Email ,string address, string departMent, string Major ,MemoryStream picture, string hometown)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO student (ID, FirstName, LastName, BirthDate," +
-                " Gender, PhoneNumber, Email, Address, Department, Major, Picture)" +
-                    " VALUES (@id, @fn, @ln, @birthDay, @gender,  @phone, @email, @addrs, @depart, @major, @pict)", mydb.getConnection);
+            SqlCommand command = new SqlCommand("INSERT INTO student ( MSSV, FirstName, LastName, BirthDate," +
+                " Gender, PhoneNumber, Email, Address, Department, Major, Picture, HomeTown)" +
+                    " VALUES (@id, @fn, @ln, @birthDay, @gender,  @phone, @email, @addrs, @depart, @major, @pict, @home)", mydb.getConnection);
 
-            command.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+            command.Parameters.Add("@id", SqlDbType.NChar).Value = id;
             command.Parameters.Add("@fn", SqlDbType.NVarChar).Value = fName;
             command.Parameters.Add("@ln", SqlDbType.NVarChar).Value = lName;
             command.Parameters.Add("@birthDay", SqlDbType.DateTime).Value = birthDate;
@@ -30,6 +30,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             command.Parameters.Add("@depart", SqlDbType.NVarChar).Value = departMent;
             command.Parameters.Add("@major", SqlDbType.NVarChar).Value = Major;
             command.Parameters.Add("@pict", SqlDbType.Image).Value = picture.ToArray();
+            command.Parameters.Add("@home", SqlDbType.NVarChar).Value = hometown;
 
             mydb.openConnection();
             if ((command.ExecuteNonQuery() == 1))
@@ -59,17 +60,18 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
 
         // create a function to update students information
-        public bool updateStudent(int ID, string fName, string lName, DateTime birthDate, string Gender, int phoneNum,
-            string Email, string address, string departMent, string Major, MemoryStream picture)
+        public bool updateStudent(string ID, string fName, string lName, DateTime birthDate, string Gender, int phoneNum,
+            string Email, string address, string departMent, string Major, MemoryStream picture, string hometown)
         {
 
            
 
-            SqlCommand command = new SqlCommand("UPDATE student SET FirstName=@fn, LastName=@ln, BirthDate=@birthDay," +
+            SqlCommand command = new SqlCommand("UPDATE student SET MSSV=@masv, FirstName=@fn, LastName=@ln, BirthDate=@birthDay," +
             " Gender=@gender, PhoneNumber=@phone, Email=@email, Address=@addrs," +
-            " Department=@depart, Major=@major, Picture=@pic WHERE ID =@id ", mydb.getConnection);
+            " Department=@depart, Major=@major, Picture=@pic, HomeTown=@home WHERE ID =@id ", mydb.getConnection);
 
-            command.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+                command.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+                command.Parameters.Add("@masv", SqlDbType.NChar).Value = ID;
                 command.Parameters.Add("@fn", SqlDbType.NVarChar).Value = fName;
                 command.Parameters.Add("@ln", SqlDbType.NVarChar).Value = lName;
             
@@ -81,8 +83,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 command.Parameters.Add("@depart", SqlDbType.NVarChar).Value = departMent;
                 command.Parameters.Add("@major", SqlDbType.NVarChar).Value = Major;
                 command.Parameters.Add("@pic", SqlDbType.Image).Value = picture.ToArray();
+                command.Parameters.Add("@home", SqlDbType.NVarChar).Value = hometown;
 
-                mydb.openConnection();
+            mydb.openConnection();
                 if ((command.ExecuteNonQuery() == 1))
                 {
                     mydb.closeConnection();
@@ -100,11 +103,10 @@ namespace _20110375_HuynhDangKhoa_LoginForm
        
 
         // create a function to delete the selected student 
-        public bool deleteStudent(int ID)
+        public bool deleteStudent(string mssv)
         {
-            SqlCommand command = new SqlCommand("DELETE FROM student WHERE id = " +
-                        ID, mydb.getConnection);
-
+            SqlCommand command = new SqlCommand("DELETE FROM student WHERE MSSV =@id ", mydb.getConnection);
+            command.Parameters.Add("@id", SqlDbType.NChar).Value = mssv;
             mydb.openConnection();
 
             if (command.ExecuteNonQuery() == 1)
@@ -118,6 +120,8 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 return false;
             }
         }
+
+
 
 
         #region This is use for form Statistics

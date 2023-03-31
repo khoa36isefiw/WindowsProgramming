@@ -43,11 +43,12 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         {
             try
             {
-                int id = int.Parse(txtStudentID.Text);  // find by ID
+                 string id = (txtStudentID.Text);  // find by MSSV
                 
-                SqlCommand command = new SqlCommand("SELECT ID, FirstName, LastName, BirthDate, Gender" +
-                    ", PhoneNumber, Email, Address, Department, Major, Picture FROM student WHERE ID = " + id);
+                SqlCommand command = new SqlCommand("SELECT MSSV, FirstName, LastName, BirthDate, Gender" +
+                    ", PhoneNumber, Email, Address, Department, Major, Picture, HomeTown FROM student WHERE MSSV =@id ");
 
+                command.Parameters.Add("@id", SqlDbType.NChar).Value = id;
 
 
                 DataTable table = student.getStudents(command);
@@ -75,11 +76,13 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     txtAddress.Text = table.Rows[0]["Address"].ToString();
                     txtMajor.Text = table.Rows[0]["Major"].ToString();
                     cboDepartment.Text = table.Rows[0]["Department"].ToString();
-
+                    
                     // picture
                     byte[] pic = (byte[])table.Rows[0]["Picture"];
                     MemoryStream picture = new MemoryStream(pic);
                     picStudent.Image = Image.FromStream(picture);
+                    cboHomeTown.Text = table.Rows[0]["HomeTown"].ToString();
+//                    txtHome.Text = table.Rows[0]["HomeTown"].ToString();
 
                 }
                 else
@@ -103,6 +106,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 || txtPhone.Text.Trim() == ""
                 || txtEmail.Text.Trim() == ""
                 || txtAddress.Text.Trim() == ""
+                
                 || txtMajor.Text.Trim() == ""
                 || picStudent.Image == null)
             {
@@ -119,17 +123,19 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(txtStudentID.Text);
+            string id = (txtStudentID.Text);
 
             try
             {
 
-                SqlCommand command = new SqlCommand("SELECT ID, FirstName, LastName, BirthDate, Gender" +
-                       ", PhoneNumber, Email, Address, Department, Major, Picture FROM student WHERE ID = " + id);
+                SqlCommand command = new SqlCommand("SELECT MSSV, FirstName, LastName, BirthDate, Gender" +
+                       ", PhoneNumber, Email, Address, Department, Major, Picture FROM student WHERE MSSV =@id " );
+                command.Parameters.Add("@id", SqlDbType.NChar).Value = id;
                 DataTable table = student.getStudents(command);
 
                 if (table.Rows.Count > 0)
                 {
+                    
                     string fName = txtFirstName.Text;
                     string lName = txtLastName.Text;
                     DateTime bdate = dtpDate.Value;
@@ -139,6 +145,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     string addrress = txtAddress.Text;
                     string departMent = cboDepartment.SelectedItem.ToString();
                     string major = txtMajor.Text;
+
+                    string ghome = cboHomeTown.SelectedItem.ToString();
+                    
                     MemoryStream pic = new MemoryStream();
                     if (radbFemale.Checked)
                     {
@@ -150,16 +159,16 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
 
 
-                    if ((this_year - born_year) < 17 || ((this_year - born_year) > 24))
+                    if ((this_year - born_year) < 17 || ((this_year - born_year) > 100))
                     {
 
-                        MessageBox.Show("Tuổi của sinh viên phải từ 18 đến 24 tuổi", "Ngày sinh không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Tuổi của sinh viên phải từ 18 đến 100 tuổi", "Ngày sinh không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else if (verif())
                     {
                         // chỉnh sửa thông tin sinh viên
                         picStudent.Image.Save(pic, picStudent.Image.RawFormat);
-                        if (student.updateStudent(id, fName, lName, bdate, gender, phoneNumber, email, addrress, departMent, major, pic))
+                        if (student.updateStudent(id, fName, lName, bdate, gender, phoneNumber, email, addrress, departMent, major, pic, ghome))
                         {
 
                             MessageBox.Show("Chỉnh sửa thông tin sinh viên thành công", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -191,7 +200,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         {
             try
             {
-                int id = Convert.ToInt32(txtStudentID.Text);
+                string id = (txtStudentID.Text);
                 // cho người dùng chọn: đồng ý xóa hoặc không
                 // nếu đồng ý - xóa đi một sinh viên đã chọn theo id
                 // nếu không thì quay trở lại form bình thường không xóa
@@ -201,7 +210,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 if (confirmDelete == DialogResult.Yes)
                 {
                     student.deleteStudent(id);
-                    MessageBox.Show("Sinh viên đã được xóa" + id,
+                    MessageBox.Show("Sinh viên đã được xóa: " + id,
                         "Confirm - Delete Student",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
@@ -219,6 +228,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     cboDepartment.SelectedText = "--select--";
                     txtMajor.Text = "";
                     picStudent.Image = null;
+                    
+                    cboHomeTown.SelectedItem = null;
+                    cboHomeTown.SelectedText = "--select--";
 
                 }
                 else
@@ -249,6 +261,17 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         private void txtFirstName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cboHomeTown_TextChanged(object sender, EventArgs e)
+        {
+            // Kiểm tra xem chuỗi văn bản trong ComboBox có chứa số hay không
+            if (cboHomeTown.Text.Any(char.IsDigit))
+            {
+                MessageBox.Show("Không được nhập số trong ComboBox!", "Lỗi",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                cboHomeTown.SelectedItem = null;
+            }
         }
     }
 }

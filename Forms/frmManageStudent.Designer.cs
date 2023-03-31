@@ -63,6 +63,8 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnDownload = new System.Windows.Forms.Button();
+            this.txtHomeTown = new System.Windows.Forms.TextBox();
+            this.lblHomeTown = new System.Windows.Forms.Label();
             this.grboGender.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVManageStudent)).BeginInit();
@@ -73,7 +75,7 @@
             this.btnAdd.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.btnAdd.Location = new System.Drawing.Point(24, 620);
+            this.btnAdd.Location = new System.Drawing.Point(28, 650);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(77, 43);
             this.btnAdd.TabIndex = 99;
@@ -267,7 +269,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(24, 686);
+            this.btnRemove.Location = new System.Drawing.Point(28, 716);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(91, 43);
             this.btnRemove.TabIndex = 80;
@@ -299,7 +301,7 @@
             this.btnEdit.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(20)))), ((int)(((byte)(137)))));
-            this.btnEdit.Location = new System.Drawing.Point(174, 620);
+            this.btnEdit.Location = new System.Drawing.Point(178, 650);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(91, 43);
             this.btnEdit.TabIndex = 79;
@@ -334,7 +336,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(174, 686);
+            this.btnReset.Location = new System.Drawing.Point(178, 716);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(91, 43);
             this.btnReset.TabIndex = 100;
@@ -344,12 +346,13 @@
             // 
             // dataGVManageStudent
             // 
+            this.dataGVManageStudent.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGVManageStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGVManageStudent.Location = new System.Drawing.Point(328, 53);
             this.dataGVManageStudent.Name = "dataGVManageStudent";
             this.dataGVManageStudent.RowHeadersWidth = 51;
             this.dataGVManageStudent.RowTemplate.Height = 24;
-            this.dataGVManageStudent.Size = new System.Drawing.Size(1406, 640);
+            this.dataGVManageStudent.Size = new System.Drawing.Size(1216, 640);
             this.dataGVManageStudent.TabIndex = 101;
             this.dataGVManageStudent.Click += new System.EventHandler(this.dataGVManageStudent_Click);
             // 
@@ -357,7 +360,7 @@
             // 
             this.lblTotalStudent.BackColor = System.Drawing.Color.Aqua;
             this.lblTotalStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalStudent.Location = new System.Drawing.Point(1338, 707);
+            this.lblTotalStudent.Location = new System.Drawing.Point(867, 721);
             this.lblTotalStudent.Name = "lblTotalStudent";
             this.lblTotalStudent.Size = new System.Drawing.Size(313, 40);
             this.lblTotalStudent.TabIndex = 102;
@@ -367,7 +370,7 @@
             // lblSearch
             // 
             this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(958, 18);
+            this.lblSearch.Location = new System.Drawing.Point(596, 22);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(154, 16);
             this.lblSearch.TabIndex = 103;
@@ -375,7 +378,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(1438, 5);
+            this.btnSearch.Location = new System.Drawing.Point(1074, 12);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(106, 42);
             this.btnSearch.TabIndex = 104;
@@ -385,7 +388,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(1209, 15);
+            this.txtSearch.Location = new System.Drawing.Point(848, 19);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(195, 22);
             this.txtSearch.TabIndex = 105;
@@ -400,11 +403,29 @@
             this.btnDownload.UseVisualStyleBackColor = true;
             this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
+            // txtHomeTown
+            // 
+            this.txtHomeTown.Location = new System.Drawing.Point(108, 613);
+            this.txtHomeTown.Name = "txtHomeTown";
+            this.txtHomeTown.Size = new System.Drawing.Size(191, 22);
+            this.txtHomeTown.TabIndex = 107;
+            // 
+            // lblHomeTown
+            // 
+            this.lblHomeTown.AutoSize = true;
+            this.lblHomeTown.Location = new System.Drawing.Point(9, 613);
+            this.lblHomeTown.Name = "lblHomeTown";
+            this.lblHomeTown.Size = new System.Drawing.Size(44, 16);
+            this.lblHomeTown.TabIndex = 108;
+            this.lblHomeTown.Text = "Home";
+            // 
             // frmManageStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1746, 768);
+            this.ClientSize = new System.Drawing.Size(1559, 768);
+            this.Controls.Add(this.lblHomeTown);
+            this.Controls.Add(this.txtHomeTown);
             this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnSearch);
@@ -487,5 +508,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnDownload;
+        private System.Windows.Forms.Label lblHomeTown;
+        internal System.Windows.Forms.TextBox txtHomeTown;
     }
 }

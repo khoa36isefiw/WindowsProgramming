@@ -62,5 +62,24 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 return false;
             }
         }
+
+        // create a function to delete the selected student 
+        public bool deleteUser(string user)
+        {
+            SqlCommand command = new SqlCommand("DELETE FROM user_login WHERE userName =@id ", mydb.getConnection);
+            command.Parameters.Add("@id", SqlDbType.NChar).Value = user;
+            mydb.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
     }
 }

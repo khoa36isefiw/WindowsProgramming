@@ -36,11 +36,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             // load dữ liệu của sinh viên từ database vào  datagridView - bằng bảng sinh viên
             dataGVManageStudent.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
-            dataGVManageStudent.RowTemplate.Height = 40;
+            dataGVManageStudent.RowTemplate.Height = 20;
             dataGVManageStudent.DataSource = student.getStudents(cmd);
 
             // columns[10] là tương ứng cột picture trong database
-            picCol = (DataGridViewImageColumn)dataGVManageStudent.Columns[10];
+            picCol = (DataGridViewImageColumn)dataGVManageStudent.Columns[11];
             picCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
             dataGVManageStudent.AllowUserToAddRows = false;
 
@@ -74,32 +74,33 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         // Hiển thị thông tin sinh viên lên các textbox khi Click vào 1 row trong data GridView
         private void dataGVManageStudent_Click(object sender, EventArgs e)
         {
-            txtStudentID.ReadOnly = true;
-            txtStudentID.Text = dataGVManageStudent.CurrentRow.Cells[0].Value.ToString();
-            txtFirstName.Text = dataGVManageStudent.CurrentRow.Cells[1].Value.ToString();
-            txtLastName.Text = dataGVManageStudent.CurrentRow.Cells[2].Value.ToString();
-            dtpDate.Value = (DateTime)dataGVManageStudent.CurrentRow.Cells[3].Value;
+            //txtStudentID.ReadOnly = true;
+            txtStudentID.Text = dataGVManageStudent.CurrentRow.Cells[1].Value.ToString();
+            txtFirstName.Text = dataGVManageStudent.CurrentRow.Cells[2].Value.ToString();
+            txtLastName.Text = dataGVManageStudent.CurrentRow.Cells[3].Value.ToString();
+            dtpDate.Value = (DateTime)dataGVManageStudent.CurrentRow.Cells[4].Value;
 
             // xét cột giới tính
-            if (dataGVManageStudent.CurrentRow.Cells[4].Value.ToString() == "Female")
+            if (dataGVManageStudent.CurrentRow.Cells[5].Value.ToString() == "Female")
             {
                 radbFemale.Checked = true;
 
 
             }
 
-            txtPhone.Text = dataGVManageStudent.CurrentRow.Cells[5].Value.ToString();
-            txtEmail.Text = dataGVManageStudent.CurrentRow.Cells[6].Value.ToString();
-            txtAddress.Text = dataGVManageStudent.CurrentRow.Cells[7].Value.ToString();
-            cboDepartment.SelectedItem = dataGVManageStudent.CurrentRow.Cells[8].Value.ToString();
-            txtMajor.Text = dataGVManageStudent.CurrentRow.Cells[9].Value.ToString();
+            txtPhone.Text = dataGVManageStudent.CurrentRow.Cells[6].Value.ToString();
+            txtEmail.Text = dataGVManageStudent.CurrentRow.Cells[7].Value.ToString();
+            txtAddress.Text = dataGVManageStudent.CurrentRow.Cells[8].Value.ToString();
+            cboDepartment.SelectedItem = dataGVManageStudent.CurrentRow.Cells[9].Value.ToString();
+            txtMajor.Text = dataGVManageStudent.CurrentRow.Cells[10].Value.ToString();
 
 
             // up image lên
             byte[] pic;
-            pic = (byte[])dataGVManageStudent.CurrentRow.Cells[10].Value;
+            pic = (byte[])dataGVManageStudent.CurrentRow.Cells[11].Value;
             MemoryStream picture = new MemoryStream(pic);
             picStudent.Image = Image.FromStream(picture);
+            txtHomeTown.Text = dataGVManageStudent.CurrentRow.Cells[12].Value.ToString();
 
         }
 
@@ -109,7 +110,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             #region Vùng check 
             try
             {
-                int id = Convert.ToInt32(txtStudentID.Text);
+                string id = (txtStudentID.Text);
                 string fName = txtFirstName.Text;
                 string lName = txtLastName.Text;
                 DateTime bdate = dtpDate.Value;
@@ -119,6 +120,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 string addrress = txtAddress.Text;
                 string departMent = cboDepartment.SelectedItem.ToString();
                 string major = txtMajor.Text;
+                string homeT = txtHomeTown.Text;
                 MemoryStream pic = new MemoryStream();
 
                 int born_year = dtpDate.Value.Year;
@@ -139,7 +141,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     picStudent.Image.Save(pic, picStudent.Image.RawFormat);
 
                     // kiểm tra student id có tồn tại hay không
-                    SqlCommand command = new SqlCommand("SELECT * FROM student WHERE ID = " + id);
+                    SqlCommand command = new SqlCommand("SELECT * FROM student WHERE MSSV =@id ");
+                    command.Parameters.Add("@id",SqlDbType.NChar).Value= id;
+                    
                     DataTable table = student.getStudents(command);
 
                     if (table.Rows.Count > 0)   // sinh viên tồn tại
@@ -171,14 +175,14 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     // student id chưa tồn tại 
                     else
                     {
-                        if (student.insertStudent(id, fName, lName, bdate, gender, phoneNumber, email, addrress, departMent, major, pic))
+                        if (student.insertStudent(id, fName, lName, bdate, gender, phoneNumber, email, addrress, departMent, major, pic, homeT))
                         {
                             MessageBox.Show("Thêm sinh viên thành công", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                         else // khoong hien thong bao?
                         {
                             MessageBox.Show("Lỗi", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        }
+                        } 
 
 
                     }
@@ -205,17 +209,21 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(txtStudentID.Text);
+            string id   = (dataGVManageStudent.CurrentRow.Cells[0].Value.ToString());
 
             try
             {
 
-                SqlCommand command = new SqlCommand("SELECT ID, FirstName, LastName, BirthDate, Gender" +
-                       ", PhoneNumber, Email, Address, Department, Major, Picture FROM student WHERE ID = " + id);
+                SqlCommand command = new SqlCommand("SELECT ID, MSSV, FirstName, LastName, BirthDate, Gender" +
+                       ", PhoneNumber, Email, Address, Department, Major, Picture, HomeTown FROM student WHERE ID = @id");
+
+                command.Parameters.Add("@id", SqlDbType.NChar).Value = id;
+
                 DataTable table = student.getStudents(command);
 
                 if (table.Rows.Count > 0)
                 {
+                    string stuID = txtStudentID.Text;
                     string fName = txtFirstName.Text;
                     string lName = txtLastName.Text;
                     DateTime bdate = dtpDate.Value;
@@ -231,24 +239,26 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                         gender = "Female";
                     }
 
+                    string home = txtHomeTown.Text;
                     int born_year = dtpDate.Value.Year;
                     int this_year = DateTime.Now.Year;
 
 
 
-                    if ((this_year - born_year) < 17 || ((this_year - born_year) > 24))
+                    if ((this_year - born_year) < 17 || ((this_year - born_year) > 100))
                     {
 
-                        MessageBox.Show("Tuổi của sinh viên phải từ 18 đến 24 tuổi", "Ngày sinh không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Tuổi của sinh viên phải từ 18 đến 100 tuổi", "Ngày sinh không hợp lệ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else if (verif())
                     {
                         // chỉnh sửa thông tin sinh viên
                         picStudent.Image.Save(pic, picStudent.Image.RawFormat);
-                        if (student.updateStudent(id, fName, lName, bdate, gender, phoneNumber, email, addrress, departMent, major, pic))
+                        if (student.updateStudent(id, fName, lName, bdate, gender, phoneNumber, email, addrress, departMent, major, pic, home))
                         {
 
                             MessageBox.Show("Chỉnh sửa thông tin sinh viên thành công", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            fillGrid(new SqlCommand("Select * from student"));
                         }
                         else
                         {
@@ -275,7 +285,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         {
             try
             {
-                int id = Convert.ToInt32(txtStudentID.Text);
+                string id = Convert.ToString(txtStudentID.Text);
                 // cho người dùng chọn: đồng ý xóa hoặc không
                 // nếu đồng ý - xóa đi một sinh viên đã chọn theo id
                 // nếu không thì quay trở lại form bình thường không xóa
@@ -303,6 +313,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     cboDepartment.SelectedText = "--select--";
                     txtMajor.Text = "";
                     picStudent.Image = null;
+                    txtHomeTown.Text = "";
 
                 }
                 else
@@ -338,6 +349,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             cboDepartment.SelectedItem = null;
             txtMajor.Text = "";
             picStudent.Image = null;
+            txtHomeTown.Text = "";
         }
 
 

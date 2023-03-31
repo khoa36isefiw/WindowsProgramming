@@ -45,6 +45,8 @@
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.btnResetPass = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGG = new System.Windows.Forms.Button();
+            this.helpProvider = new System.Windows.Forms.HelpProvider();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -257,12 +259,23 @@
             this.btnResetPass.Text = "Reset Password";
             this.btnResetPass.Click += new System.EventHandler(this.btnResetPass_Click);
             // 
+            // btnGG
+            // 
+            this.btnGG.Location = new System.Drawing.Point(315, 299);
+            this.btnGG.Name = "btnGG";
+            this.btnGG.Size = new System.Drawing.Size(75, 38);
+            this.btnGG.TabIndex = 25;
+            this.btnGG.Text = "google";
+            this.btnGG.UseVisualStyleBackColor = true;
+            this.btnGG.Click += new System.EventHandler(this.btnGG_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1105, 609);
+            this.Controls.Add(this.btnGG);
             this.Controls.Add(this.btnResetPass);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLogin);
@@ -305,6 +318,8 @@
         private Guna.UI2.WinForms.Guna2Button btnSignUp;
         private Guna.UI2.WinForms.Guna2Button btnResetPass;
         internal Guna.UI2.WinForms.Guna2TextBox txtUserName;
+        private System.Windows.Forms.Button btnGG;
+        private System.Windows.Forms.HelpProvider helpProvider;
     }
 }
 
