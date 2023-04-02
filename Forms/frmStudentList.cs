@@ -58,8 +58,10 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             if (dataGVStudentList.CurrentRow.Cells[5].Value.ToString() == "Female")
             {
                 updateRemoveStudent.radbFemale.Checked = true;
-
-
+            }
+            else
+            {
+                updateRemoveStudent.radbMale.Checked = true;
             }
 
             updateRemoveStudent.txtPhone.Text = dataGVStudentList.CurrentRow.Cells[6].Value.ToString();

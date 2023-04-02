@@ -66,11 +66,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
            
 
-            SqlCommand command = new SqlCommand("UPDATE student SET MSSV=@masv, FirstName=@fn, LastName=@ln, BirthDate=@birthDay," +
+            SqlCommand command = new SqlCommand("UPDATE student SET  FirstName=@fn, LastName=@ln, BirthDate=@birthDay," +
             " Gender=@gender, PhoneNumber=@phone, Email=@email, Address=@addrs," +
-            " Department=@depart, Major=@major, Picture=@pic, HomeTown=@home WHERE ID =@id ", mydb.getConnection);
+            " Department=@depart, Major=@major, Picture=@pic, HomeTown=@home WHERE MSSV=@masv", mydb.getConnection);
 
-                command.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+                
                 command.Parameters.Add("@masv", SqlDbType.NChar).Value = ID;
                 command.Parameters.Add("@fn", SqlDbType.NVarChar).Value = fName;
                 command.Parameters.Add("@ln", SqlDbType.NVarChar).Value = lName;

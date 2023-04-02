@@ -22,7 +22,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         private void frmAddStudent_Load(object sender, EventArgs e)
         {
-
+            
         }
 
       
@@ -72,6 +72,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
+                MessageBox.Show("Mahiru");
             }
         }
 
@@ -211,9 +212,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     }
 
 
-                     else if (txtPhone.Text.Length > 0 && txtPhone.Text.Length < 10)
+                    else if (txtPhone.Text.Length > 0 && txtPhone.Text.Length < 4)
                     {
-                        MessageBox.Show("Số điện thoại phải nhập đủ 10 số !!!!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Số điện thoại phải nhập đủ 4 số !!!!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     }
 
@@ -230,6 +231,8 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     {
                         MessageBox.Show("Luân đấm mày đó nha - Hãy điền đúng format của GMAIL!", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
+
+
 
                     // student id chưa tồn tại 
                     else
@@ -291,7 +294,10 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             if (!Regex.IsMatch(txtFirstName.Text, pattern))
             {
                 // Display error message
-                MessageBox.Show("Input can only contain letters and spaces.");
+                MessageBox.Show("Input can only contain letters and spaces.", "" +
+                    "Add Student",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
                 txtFirstName.Text = ""; // Clear the textbox
             }
         }
@@ -306,32 +312,58 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             if (!Regex.IsMatch(txtLastName.Text, pattern))
             {
                 // Display error message
-                MessageBox.Show("Input can only contain letters and spaces.");
+                MessageBox.Show("Input can only contain letters and spaces.", "" +
+                    "Add Student",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
                 txtLastName.Text = ""; // Clear the textbox
             }
         }
 
+        private static bool errorShown = false; // Biến flag
         private void txtPhone_TextChanged(object sender, EventArgs e)
         {
+
+            // Biểu thức chính quy
             // Define regular expression pattern
-            string pattern = @"^[^a-zA-Z]*$";
+            string pattern = @"^[0-9]+$"; // Chỉ chấp nhận các ký tự số
 
-
-            // Check if input matches pattern
-            if (!Regex.IsMatch(txtPhone.Text, pattern) )
+            // Kiểm tra chuỗi nhập vào bằng biểu thức chính quy
+            if (!Regex.IsMatch(txtPhone.Text, pattern))
             {
-                if(txtPhone.Text.Length != 10)
+                if(!errorShown)
                 {
-                    // Display error message
-                    MessageBox.Show("Phone number must be exactly 10 digits and cannot contain letters or special characters.");
                     txtPhone.Text = ""; // Clear the textbox
+                    MessageBox.Show("Số điện thoại chỉ được chứa các ký tự số.",
+                       "Add Student",
+                       MessageBoxButtons.OK,
+                       MessageBoxIcon.Warning);
+                    errorShown = true;
                 }
-            
+                else
+                {
+                    errorShown = false; // Nếu chuỗi hợp lệ, đặt biến flag thành false
+                }
+
             }
+            
+
         }
 
         private void cboHomeTown_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //// Kiểm tra xem có phần tử nào được chọn hay không
+            if (cboHomeTown.SelectedIndex == -1)
+            {
+                MessageBox.Show("Bạn chưa chọn phần tử nào trong ComboBox!");
+            }
+            else
+            {
+                // Phần tử được chọn
+                string selectedValue = cboHomeTown.SelectedItem.ToString();
+                MessageBox.Show("Bạn đã chọn phần tử: " + selectedValue);
+            }
+
 
         }
 
@@ -346,6 +378,8 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             }
 
         }
+
+    
     }
 
 

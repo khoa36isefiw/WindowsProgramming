@@ -87,9 +87,8 @@
             this.dataGRV_User.RowTemplate.Height = 24;
             this.dataGRV_User.Size = new System.Drawing.Size(863, 500);
             this.dataGRV_User.TabIndex = 0;
-
+            this.dataGRV_User.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.dataGRV_User_UserDeletingRow);
             this.dataGRV_User.Click += new System.EventHandler(this.dataGRV_User_Click);
-            
             // 
             // userNameDataGridViewTextBoxColumn
             // 
