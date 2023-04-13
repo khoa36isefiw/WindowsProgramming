@@ -21,12 +21,12 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Score
         SCORE score = new SCORE();
         STUDENT student = new STUDENT();
         Course.COURSE course = new Course.COURSE();
-        string data = "score";
+        string data = "score2";
 
         private void ManageScore_Load(object sender, EventArgs e)
         {
             dataGridViewManageResult.DataSource = score.getStudentScore();
-            data = "score";
+            data = "score2";
 
             cboChooseCourse.DataSource = course.getAllCourses();
             cboChooseCourse.DisplayMember = "label";
@@ -43,7 +43,8 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Score
                 }
                 else
                 {
-                    int studentID = Convert.ToInt32(txtStudentID.Text);
+                    //int studentID = Convert.ToInt32(txtStudentID.Text);
+                    string studentID = txtStudentID.Text;
                     int courseID = Convert.ToInt32(cboChooseCourse.SelectedValue);
                     float scoreValue = float.Parse(txtScore.Text);
                     string description = txtCourseDescription.Text;
@@ -74,9 +75,10 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Score
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            if (data == "score")
+            if (data == "score2")
             {
-                int student_id = Convert.ToInt32(dataGridViewManageResult.CurrentRow.Cells[0].Value.ToString());
+                //int student_id = Convert.ToInt32(dataGridViewManageResult.CurrentRow.Cells[0].Value.ToString());
+                string student_id = dataGridViewManageResult.CurrentRow.Cells[0].Value.ToString();
                 int course_id = Convert.ToInt32(dataGridViewManageResult.CurrentRow.Cells[3].Value.ToString());
                 if ((MessageBox.Show("Are you sure you want to delete this course", "Remove Course", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes))
                 {
@@ -107,14 +109,18 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Score
         {
             data = "student";
 
-            SqlCommand cmd = new SqlCommand("select ID, FirstName, LastName from student ");
+            //SqlCommand cmd = new SqlCommand("select ID, FirstName, LastName from student ");
+            
+            SqlCommand cmd = new SqlCommand("select MSSV, FirstName as 'First Name', LastName as 'Last Name' from student ");
+
 
             dataGridViewManageResult.DataSource = student.getStudents(cmd);
         }
 
         private void btnShowScores_Click(object sender, EventArgs e)
         {
-            data = "score";
+            data = "score2";
+            //SqlCommand cmd = new SqlCommand("select student_id, course_id, student_score, description from score2 ");
             dataGridViewManageResult.DataSource = score.getStudentScore();
         }
 
@@ -130,7 +136,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Score
             {
                 txtStudentID.Text = dataGridViewManageResult.CurrentRow.Cells[0].Value.ToString();
             }
-            else if (data == "score")
+            else if (data == "score2")
             {
                 txtStudentID.Text = dataGridViewManageResult.CurrentRow.Cells[0].Value.ToString();
                 cboChooseCourse.SelectedValue = dataGridViewManageResult.CurrentRow.Cells[3].Value;

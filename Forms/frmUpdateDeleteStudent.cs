@@ -17,6 +17,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
     {
 
         STUDENT student = new STUDENT();
+        MY_DB mydb = new MY_DB();
 
         public frmUpdateDeleteStudent()
         {
@@ -272,6 +273,35 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cboHomeTown.SelectedItem = null;
             }
+        }
+
+        private void btnAddCourse_Click(object sender, EventArgs e)
+        {
+            Forms.AddCourseForm addCF = new Forms.AddCourseForm();
+            addCF.Show();
+        }
+
+        private void txtStudentID_TextChanged(object sender, EventArgs e)
+        {
+            //// gợi ý MSSV của student cho người dùng khi nhập vào text box này 
+            //SqlDataReader dr;
+            //SqlCommand cmd = new SqlCommand("SELECT MSSV FROM student Where MSSV LIKE '%" + txtStudentID.Text + "%'", mydb.getConnection);
+            //mydb.openConnection();
+            //cmd.ExecuteNonQuery();
+
+
+            //dr = cmd.ExecuteReader();
+            //AutoCompleteStringCollection col = new AutoCompleteStringCollection();
+            //while (dr.Read())
+            //{
+            //    col.Add(dr.GetString(0));
+            //}
+            //txtStudentID.AutoCompleteCustomSource = col;
+            //dr.Close();
+            //mydb.closeConnection();
+
+
+
         }
     }
 }

@@ -150,6 +150,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     SqlCommand cmd = new SqlCommand("SELECT * FROM student Where Address LIKE '%" + txtFind.Text + "%'");
                     fillGrid(cmd);
                 }
+                else if (cboFind.SelectedIndex == 4) // get by MSSV
+                {
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM student Where MSSV LIKE '%" + txtFind.Text + "%'");
+                    fillGrid(cmd);
+                }
                 else  // get by Major
                 {
                     SqlCommand cmd = new SqlCommand("SELECT * FROM student Where Major LIKE '%" + txtFind.Text + "%'");
@@ -244,7 +249,10 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         }
 
-       
+        private void txtFind_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

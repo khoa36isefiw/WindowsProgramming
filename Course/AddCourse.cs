@@ -33,6 +33,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Forms
                 string name = txtCourseName.Text;
                 int hrs = Convert.ToInt32(txtCourseTime.Text);
                 string description = txtCourseDescription.Text;
+                string semester = cboSemester.SelectedItem.ToString();
 
                 Course.COURSE course = new Course.COURSE();
 
@@ -48,7 +49,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Forms
                     }
                     else if (!course.checkCCourseName(name, id))
                     {
-                        if (course.insertCourse(id, name, hrs, description))
+                        if (course.insertCourse(id, name, hrs, description, semester))
                         {
                             MessageBox.Show("Thêm Course Thành Công!", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
@@ -132,6 +133,31 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Forms
                 return false;
             else
                 return true;
+
+        }
+
+        private void txtCourseID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)  // 8 là phím Backspace
+            {
+                // Nếu không phải số thì chặn sự kiện KeyPress
+                MessageBox.Show("Chỉ được nhập số!","Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+        }
+
+        private void txtCourseTime_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)  // 8 là phím Backspace
+            {
+                // Nếu không phải số thì chặn sự kiện KeyPress
+                MessageBox.Show("Chỉ được nhập số!", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+        }
+
+        private void cboSemester_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -39,21 +39,22 @@
             this.cboChooseCourse = new System.Windows.Forms.ComboBox();
             this.txtScore = new System.Windows.Forms.TextBox();
             this.dataGridView_Score = new System.Windows.Forms.DataGridView();
+            this.lblStudentList = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Score)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(684, 358);
+            this.btnRefresh.Location = new System.Drawing.Point(698, 370);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(94, 34);
+            this.btnRefresh.Size = new System.Drawing.Size(124, 46);
             this.btnRefresh.TabIndex = 55;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // btnAddScore
             // 
-            this.btnAddScore.Location = new System.Drawing.Point(190, 373);
+            this.btnAddScore.Location = new System.Drawing.Point(190, 370);
             this.btnAddScore.Name = "btnAddScore";
             this.btnAddScore.Size = new System.Drawing.Size(124, 46);
             this.btnAddScore.TabIndex = 51;
@@ -138,7 +139,7 @@
             // 
             this.dataGridView_Score.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_Score.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_Score.Location = new System.Drawing.Point(497, 29);
+            this.dataGridView_Score.Location = new System.Drawing.Point(502, 47);
             this.dataGridView_Score.Name = "dataGridView_Score";
             this.dataGridView_Score.RowHeadersWidth = 51;
             this.dataGridView_Score.RowTemplate.Height = 24;
@@ -147,11 +148,21 @@
             this.dataGridView_Score.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Score_CellContentClick);
             this.dataGridView_Score.Click += new System.EventHandler(this.dataGridView_Score_Click);
             // 
+            // lblStudentList
+            // 
+            this.lblStudentList.AutoSize = true;
+            this.lblStudentList.Location = new System.Drawing.Point(708, 9);
+            this.lblStudentList.Name = "lblStudentList";
+            this.lblStudentList.Size = new System.Drawing.Size(75, 16);
+            this.lblStudentList.TabIndex = 59;
+            this.lblStudentList.Text = "Student List";
+            // 
             // AddScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 480);
+            this.Controls.Add(this.lblStudentList);
             this.Controls.Add(this.dataGridView_Score);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.cboChooseCourse);
@@ -185,5 +196,6 @@
         private System.Windows.Forms.ComboBox cboChooseCourse;
         private System.Windows.Forms.TextBox txtScore;
         private System.Windows.Forms.DataGridView dataGridView_Score;
+        private System.Windows.Forms.Label lblStudentList;
     }
 }

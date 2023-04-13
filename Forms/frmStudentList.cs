@@ -27,7 +27,8 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         private void frmStudentList_Load(object sender, EventArgs e)
         {
             // load dữ liệu của sinh viên từ database vào  datagridView - bằng bảng sinh viên
-            SqlCommand command = new SqlCommand("SELECT * FROM student");
+            //SqlCommand command = new SqlCommand("SELECT * FROM student");
+            SqlCommand command = new SqlCommand("Select ID as N'Table ID', MSSV as N'Student ID', FirstName as N'First Name', LastName as N'Last Name', BirthDate as BirthDay, Gender, PhoneNumber as N'Phone Number', Email, Address, Department, Major, Picture, HomeTown as N'Home Town', selectedCourse as N'Selected Course' from student");
             dataGVStudentList.ReadOnly = true;
             DataGridViewImageColumn picCol = new DataGridViewImageColumn();
             dataGVStudentList.RowTemplate.Height = 20;

@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGRV_Course = new System.Windows.Forms.DataGridView();
+            this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDataSetFull = new _20110375_HuynhDangKhoa_LoginForm.QLSVDataSetFull();
             this.btnToFile = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.qLSVDataSetFull = new _20110375_HuynhDangKhoa_LoginForm.QLSVDataSetFull();
-            this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.courseTableAdapter = new _20110375_HuynhDangKhoa_LoginForm.QLSVDataSetFullTableAdapters.CourseTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.periodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGRV_Course)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDataSetFull)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDataSetFull)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGRV_Course
@@ -61,6 +61,16 @@
             this.dataGRV_Course.RowTemplate.Height = 24;
             this.dataGRV_Course.Size = new System.Drawing.Size(652, 314);
             this.dataGRV_Course.TabIndex = 0;
+            // 
+            // courseBindingSource
+            // 
+            this.courseBindingSource.DataMember = "Course";
+            this.courseBindingSource.DataSource = this.qLSVDataSetFull;
+            // 
+            // qLSVDataSetFull
+            // 
+            this.qLSVDataSetFull.DataSetName = "QLSVDataSetFull";
+            this.qLSVDataSetFull.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnToFile
             // 
@@ -82,16 +92,6 @@
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // qLSVDataSetFull
-            // 
-            this.qLSVDataSetFull.DataSetName = "QLSVDataSetFull";
-            this.qLSVDataSetFull.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // courseBindingSource
-            // 
-            this.courseBindingSource.DataMember = "Course";
-            this.courseBindingSource.DataSource = this.qLSVDataSetFull;
-            // 
             // courseTableAdapter
             // 
             this.courseTableAdapter.ClearBeforeFill = true;
@@ -99,28 +99,28 @@
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "STT";
             this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             // 
             // labelDataGridViewTextBoxColumn
             // 
             this.labelDataGridViewTextBoxColumn.DataPropertyName = "label";
-            this.labelDataGridViewTextBoxColumn.HeaderText = "label";
+            this.labelDataGridViewTextBoxColumn.HeaderText = "Course Name";
             this.labelDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.labelDataGridViewTextBoxColumn.Name = "labelDataGridViewTextBoxColumn";
             // 
             // periodDataGridViewTextBoxColumn
             // 
             this.periodDataGridViewTextBoxColumn.DataPropertyName = "period";
-            this.periodDataGridViewTextBoxColumn.HeaderText = "period";
+            this.periodDataGridViewTextBoxColumn.HeaderText = "Duration";
             this.periodDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.periodDataGridViewTextBoxColumn.Name = "periodDataGridViewTextBoxColumn";
             // 
             // descriptionDataGridViewTextBoxColumn
             // 
             this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Mo Ta";
             this.descriptionDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
             // 
@@ -136,8 +136,8 @@
             this.Text = "PrintCourseForm";
             this.Load += new System.EventHandler(this.PrintCourseForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGRV_Course)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLSVDataSetFull)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDataSetFull)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -56,5 +56,15 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
                 MessageBox.Show("Hãy Vui Lòng Điền Course ID", "Remove Course", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
+
+        private void txtCourseID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8)  // 8 là phím Backspace
+            {
+                // Nếu không phải số thì chặn sự kiện KeyPress
+                MessageBox.Show("Chỉ được nhập số!", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Handled = true;
+            }
+        }
     }
 }

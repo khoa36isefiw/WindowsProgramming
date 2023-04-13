@@ -31,7 +31,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Score
             cboChooseCourse.ValueMember = "id";
 
             //
-            SqlCommand command = new SqlCommand("SELECT ID, FirstName, LastName FROM student");
+            SqlCommand command = new SqlCommand("SELECT MSSV, FirstName as 'First Name', LastName 'Last Name' FROM student");
             dataGridView_Score.DataSource = student.getStudents(command);
 
         }
@@ -46,7 +46,8 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Score
                 }
                 else
                 {
-                    int studentID = Convert.ToInt32(txtStudentID.Text);
+                    //int studentID = Convert.ToInt32(txtStudentID.Text);
+                    string studentID = (txtStudentID.Text);
                     int courseID = Convert.ToInt32(cboChooseCourse.SelectedValue);
                     float scoreValue = float.Parse(txtScore.Text);
                     string description = txtCourseDescription.Text;

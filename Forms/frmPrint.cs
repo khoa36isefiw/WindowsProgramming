@@ -33,6 +33,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
        
         private void frmPrint_Load(object sender, EventArgs e)
         {
+            dataGVStudent_information.ReadOnly = true;
+            // TODO: This line of code loads data into the 'qLSVDataSetFullUpdated.student' table. You can move, or remove it, as needed.
+            this.studentTableAdapter2.Fill(this.qLSVDataSetFullUpdated.student);
 
             // TODO: This line of code loads data into the 'userDataSet.user_login' table. You can move, or remove it, as needed.
             //this.user_loginTableAdapter.Fill(this.userDataSet.user_login);
@@ -270,6 +273,9 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                                 string home = row.Cells[12].Value.ToString();
                                 pdfTable.AddCell(home.ToUpper());
 
+                                string sCourse = row.Cells[13].Value.ToString();
+                                pdfTable.AddCell(sCourse.ToUpper());
+
 
                             }
 
@@ -495,7 +501,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 oDoc.SaveAs2(filename);
             }
         }
-
+        #region word
 
         // Hàm xuất dữ liệu từ DataGridView sang Word
         private void ExportToWord(DataGridView dataGridView)
@@ -618,7 +624,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             wordApp.ActiveDocument.Close(false);
             wordApp.Quit();
         }
-
+#endregion
 
         private void ExportToPDF(DataGridView dataGridView, string filePath)
         {
@@ -649,6 +655,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
             document.Add(table);
             document.Close();
+        }
+
+        private void dataGVStudent_information_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

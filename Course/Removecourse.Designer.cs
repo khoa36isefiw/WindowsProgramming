@@ -38,7 +38,7 @@
             // 
             this.lblCourseID.AutoSize = true;
             this.lblCourseID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCourseID.Location = new System.Drawing.Point(9, 73);
+            this.lblCourseID.Location = new System.Drawing.Point(9, 78);
             this.lblCourseID.Name = "lblCourseID";
             this.lblCourseID.Size = new System.Drawing.Size(217, 25);
             this.lblCourseID.TabIndex = 0;
@@ -46,11 +46,12 @@
             // 
             // txtCourseID
             // 
-            this.txtCourseID.Location = new System.Drawing.Point(232, 73);
+            this.txtCourseID.Location = new System.Drawing.Point(245, 78);
             this.txtCourseID.Multiline = true;
             this.txtCourseID.Name = "txtCourseID";
             this.txtCourseID.Size = new System.Drawing.Size(185, 30);
             this.txtCourseID.TabIndex = 1;
+            this.txtCourseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCourseID_KeyPress);
             // 
             // btnRemove
             // 
@@ -58,9 +59,9 @@
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.Image = ((System.Drawing.Image)(resources.GetObject("btnRemove.Image")));
             this.btnRemove.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRemove.Location = new System.Drawing.Point(440, 68);
+            this.btnRemove.Location = new System.Drawing.Point(454, 78);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(145, 40);
+            this.btnRemove.Size = new System.Drawing.Size(128, 34);
             this.btnRemove.TabIndex = 2;
             this.btnRemove.Text = "Remove";
             this.btnRemove.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

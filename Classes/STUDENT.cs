@@ -12,6 +12,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
     public class STUDENT
     {
         MY_DB mydb = new MY_DB();
+    
         public bool insertStudent (string id, string fName, string lName, DateTime birthDate, string Gender, int phoneNum, 
             string Email ,string address, string departMent, string Major ,MemoryStream picture, string hometown)
         {
@@ -57,6 +58,18 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             return table;
 
         }
+        //public DataTable getStudentsByCourses(SqlCommand command)
+        //{
+        //    command.Connection = mydb.getConnection;
+
+        //    SqlDataAdapter adapter = new SqlDataAdapter(command);
+        //    DataTable table = new DataTable();
+        //    adapter.Fill(table);
+
+        //    return table;
+
+        //}
+
 
 
         // create a function to update students information
@@ -99,8 +112,29 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         }
 
+        // upadate selected Course for student
+        public bool updateStudentSelectedCourses(string ID,string selectedCourse)
+        {
+            SqlCommand command = new SqlCommand("UPDATE student SET selectedCourse=@Course WHERE MSSV=@masv", mydb.getConnection);
 
-       
+            command.Parameters.Add("@masv", SqlDbType.NChar).Value = ID;
+            command.Parameters.Add("@Course", SqlDbType.Text).Value = selectedCourse;
+
+            mydb.openConnection();
+            if ((command.ExecuteNonQuery() == 1))
+            {
+                mydb.closeConnection();
+                return true;
+            }
+            else
+            {
+                mydb.closeConnection();
+                return false;
+            }
+        }
+
+
+
 
         // create a function to delete the selected student 
         public bool deleteStudent(string mssv)

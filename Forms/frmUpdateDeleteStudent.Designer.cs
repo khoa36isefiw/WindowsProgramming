@@ -196,10 +196,13 @@
             // 
             // txtStudentID
             // 
+            this.txtStudentID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txtStudentID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtStudentID.Location = new System.Drawing.Point(154, 35);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.Size = new System.Drawing.Size(201, 22);
             this.txtStudentID.TabIndex = 64;
+            this.txtStudentID.TextChanged += new System.EventHandler(this.txtStudentID_TextChanged);
             // 
             // lblStuDepart
             // 
@@ -418,6 +421,7 @@
             this.btnAddCourse.TabIndex = 77;
             this.btnAddCourse.Text = "Add Course";
             this.btnAddCourse.UseVisualStyleBackColor = true;
+            this.btnAddCourse.Click += new System.EventHandler(this.btnAddCourse_Click);
             // 
             // frmUpdateDeleteStudent
             // 

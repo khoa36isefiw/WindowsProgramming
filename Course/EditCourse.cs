@@ -69,6 +69,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
                     int hrs = (int)numericUpDownPeriod.Value;
                     string descr = txtCourseDescription.Text;
                     int id = (int)cboSelectCourse.SelectedValue;
+                    string semester = cboSelectCourse.SelectedItem.ToString();
 
                     //Lấy lại phần kiểm tra tên course
                     if (!course.checkCourseID(id))
@@ -76,7 +77,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
                         MessageBox.Show("This Course Name Does Not Exist", "Edit Course", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                     }
-                    else if (course.updateCourse(id, name, hrs, descr))
+                    else if (course.updateCourse(id, name, hrs, descr, semester))
                     {
                         MessageBox.Show("Course Updated", "Edit Course", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         fillCombobox(cboSelectCourse.SelectedIndex);

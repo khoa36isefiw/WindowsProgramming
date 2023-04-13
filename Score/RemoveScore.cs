@@ -28,7 +28,8 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Score
 
         private void btnRemoveScore_Click(object sender, EventArgs e)
         {
-            int student_id = Convert.ToInt32(dataGridView_ScoreStudent.CurrentRow.Cells[0].Value.ToString());
+            //int student_id = Convert.ToInt32(dataGridView_ScoreStudent.CurrentRow.Cells[0].Value.ToString());
+            string student_id = (dataGridView_ScoreStudent.CurrentRow.Cells[0].Value.ToString());
             int course_id = Convert.ToInt32(dataGridView_ScoreStudent.CurrentRow.Cells[3].Value.ToString());
 
             if ((MessageBox.Show("Are you sure you want to delete this score", "Remove Score", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes))

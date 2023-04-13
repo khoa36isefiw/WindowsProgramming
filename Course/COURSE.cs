@@ -14,15 +14,16 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
 
 
         // function to insert a new course
-        public bool insertCourse(int id, string courseName, int hoursNumber, string description)
+        public bool insertCourse(int id, string courseName, int hoursNumber, string description, string semester)
         {
-            SqlCommand cmd = new SqlCommand("INSERT INTO Course (id, label, period, description)" +
-                "Values (@icd, @name, @time, @desc)", mydb.getConnection);
+            SqlCommand cmd = new SqlCommand("INSERT INTO Course (id, label, period, description, semester)" +
+                "Values (@icd, @name, @time, @desc, @sem)", mydb.getConnection);
 
             cmd.Parameters.Add("@icd", SqlDbType.Int).Value = id;
             cmd.Parameters.Add("@name", SqlDbType.NVarChar).Value = courseName;
             cmd.Parameters.Add("@time", SqlDbType.Int).Value = hoursNumber;
             cmd.Parameters.Add("@desc", SqlDbType.Text).Value = description;
+            cmd.Parameters.Add("@sem", SqlDbType.VarChar).Value = semester;
 
             mydb.openConnection();
             if ((cmd.ExecuteNonQuery() == 1))
@@ -59,12 +60,12 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
 
         // update - edit course
         // create a function to update students information
-        public bool updateCourse(int courseID, string courseName, int hours, string descript)
+        public bool updateCourse(int courseID, string courseName, int hours, string descript, string semester)
         {
 
 
 
-            SqlCommand command = new SqlCommand("UPDATE Course SET label=@name, period=@hours, description=@des " +
+            SqlCommand command = new SqlCommand("UPDATE Course SET label=@name, period=@hours, description=@des, semester=@sem " +
                 "WHERE id =@icd ", mydb.getConnection);
 
             command.Parameters.Add("@icd", SqlDbType.Int).Value = courseID;
@@ -72,6 +73,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
             command.Parameters.Add("@hours", SqlDbType.Int).Value = hours;
 
             command.Parameters.Add("@des", SqlDbType.Text).Value = descript;
+            command.Parameters.Add("@sem", SqlDbType.VarChar).Value = descript;
 
             mydb.openConnection();
             if ((command.ExecuteNonQuery() == 1))
@@ -104,6 +106,24 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
 
         //create a function to return all data from course
         public DataTable getAllCourses()
+        {
+            /*
+             
+             ommand = new SqlCommand("SELECT score.student_id as 'Student ID',std.fname as 'First Name',std.lname as 'Last Name',score.course_id as 'Course ID', course.label as 'Course Label',score.student_score as 'Student Score' FROM std INNER JOIN score ON std.id = score.student_id INNER JOIN course ON score.course_id = course.id", mydb.getConnection
+             
+             SELECT score.student_id as 'Student ID',std.fname as 'First Name',
+                std.lname as 'Last Name',score.course_id as 'Course ID', course.label as 'Course Label',score.student_score as 'Student Score' FROM std INNER JOIN score ON std.id = score.student_id INNER JOIN course ON score.course_id = course.id
+             
+             
+             */
+            SqlCommand command = new SqlCommand("select * from Course", mydb.getConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
+        public DataTable getAllCourseForResult()
         {
             SqlCommand command = new SqlCommand("SELECT * FROM Course", mydb.getConnection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);

@@ -60,6 +60,19 @@
             this.userloginBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.user_loginTableAdapter = new _20110375_HuynhDangKhoa_LoginForm.UserDataSetTableAdapters.user_loginTableAdapter();
             this.dataGVStudent_information = new System.Windows.Forms.DataGridView();
+            this.studentBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.studentDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLSVDataSetFullUpdated = new _20110375_HuynhDangKhoa_LoginForm.QLSVDataSetFullUpdated();
+            this.studentBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentTableAdapter2 = new _20110375_HuynhDangKhoa_LoginForm.QLSVDataSetFullUpdatedTableAdapters.studentTableAdapter();
+            this.userloginBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
+            this.studentBindingSource9 = new System.Windows.Forms.BindingSource(this.components);
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mSSVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -73,11 +86,7 @@
             this.majorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.homeTownDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.studentBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.studentBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
-            this.studentBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.qLSVDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.studentDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.selectedCourseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxChoose.SuspendLayout();
             this.groupBoxDate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource2)).BeginInit();
@@ -95,6 +104,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDataSetBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDataSetBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDataSetFullUpdated)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userloginBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource9)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxChoose
@@ -378,19 +394,85 @@
             this.departmentDataGridViewTextBoxColumn,
             this.majorDataGridViewTextBoxColumn,
             this.pictureDataGridViewImageColumn,
-            this.homeTownDataGridViewTextBoxColumn});
-            this.dataGVStudent_information.DataSource = this.studentBindingSource2;
-            this.dataGVStudent_information.Location = new System.Drawing.Point(12, 177);
+            this.homeTownDataGridViewTextBoxColumn,
+            this.selectedCourseDataGridViewTextBoxColumn});
+            this.dataGVStudent_information.DataSource = this.studentBindingSource9;
+            this.dataGVStudent_information.Location = new System.Drawing.Point(48, 176);
             this.dataGVStudent_information.Name = "dataGVStudent_information";
             this.dataGVStudent_information.RowHeadersWidth = 51;
             this.dataGVStudent_information.RowTemplate.Height = 24;
-            this.dataGVStudent_information.Size = new System.Drawing.Size(1497, 441);
+            this.dataGVStudent_information.Size = new System.Drawing.Size(1329, 441);
             this.dataGVStudent_information.TabIndex = 5;
+            this.dataGVStudent_information.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGVStudent_information_CellContentClick_1);
+            // 
+            // studentBindingSource3
+            // 
+            this.studentBindingSource3.DataMember = "student";
+            this.studentBindingSource3.DataSource = this.qLSVDataSetBindingSource;
+            // 
+            // studentBindingSource4
+            // 
+            this.studentBindingSource4.DataMember = "student";
+            this.studentBindingSource4.DataSource = this.qLSVDataSetBindingSource;
+            // 
+            // studentBindingSource5
+            // 
+            this.studentBindingSource5.DataMember = "student";
+            this.studentBindingSource5.DataSource = this.qLSVDataSetBindingSource;
+            // 
+            // qLSVDataSetBindingSource1
+            // 
+            this.qLSVDataSetBindingSource1.DataSource = this.qLSVDataSet;
+            this.qLSVDataSetBindingSource1.Position = 0;
+            // 
+            // studentDataSetBindingSource
+            // 
+            this.studentDataSetBindingSource.DataSource = this.studentDataSet;
+            this.studentDataSetBindingSource.Position = 0;
+            // 
+            // studentDataSetBindingSource1
+            // 
+            this.studentDataSetBindingSource1.DataSource = this.studentDataSet;
+            this.studentDataSetBindingSource1.Position = 0;
+            // 
+            // studentBindingSource6
+            // 
+            this.studentBindingSource6.DataMember = "student";
+            this.studentBindingSource6.DataSource = this.studentDataSetBindingSource1;
+            // 
+            // qLSVDataSetFullUpdated
+            // 
+            this.qLSVDataSetFullUpdated.DataSetName = "QLSVDataSetFullUpdated";
+            this.qLSVDataSetFullUpdated.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // studentBindingSource7
+            // 
+            this.studentBindingSource7.DataMember = "student";
+            this.studentBindingSource7.DataSource = this.qLSVDataSetFullUpdated;
+            // 
+            // studentTableAdapter2
+            // 
+            this.studentTableAdapter2.ClearBeforeFill = true;
+            // 
+            // userloginBindingSource1
+            // 
+            this.userloginBindingSource1.DataMember = "user_login";
+            this.userloginBindingSource1.DataSource = this.userDataSetBindingSource;
+            // 
+            // studentBindingSource8
+            // 
+            this.studentBindingSource8.DataMember = "student";
+            this.studentBindingSource8.DataSource = this.qLSVDataSetBindingSource;
+            // 
+            // studentBindingSource9
+            // 
+            this.studentBindingSource9.DataMember = "student";
+            this.studentBindingSource9.DataSource = this.qLSVDataSetFullUpdated;
             // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "STT";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "Table ID";
             this.iDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.ReadOnly = true;
@@ -398,7 +480,7 @@
             // mSSVDataGridViewTextBoxColumn
             // 
             this.mSSVDataGridViewTextBoxColumn.DataPropertyName = "MSSV";
-            this.mSSVDataGridViewTextBoxColumn.HeaderText = "MSSV";
+            this.mSSVDataGridViewTextBoxColumn.HeaderText = "Student ID";
             this.mSSVDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.mSSVDataGridViewTextBoxColumn.Name = "mSSVDataGridViewTextBoxColumn";
             // 
@@ -479,30 +561,12 @@
             this.homeTownDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.homeTownDataGridViewTextBoxColumn.Name = "homeTownDataGridViewTextBoxColumn";
             // 
-            // studentBindingSource3
+            // selectedCourseDataGridViewTextBoxColumn
             // 
-            this.studentBindingSource3.DataMember = "student";
-            this.studentBindingSource3.DataSource = this.qLSVDataSetBindingSource;
-            // 
-            // studentBindingSource4
-            // 
-            this.studentBindingSource4.DataMember = "student";
-            this.studentBindingSource4.DataSource = this.qLSVDataSetBindingSource;
-            // 
-            // studentBindingSource5
-            // 
-            this.studentBindingSource5.DataMember = "student";
-            this.studentBindingSource5.DataSource = this.qLSVDataSetBindingSource;
-            // 
-            // qLSVDataSetBindingSource1
-            // 
-            this.qLSVDataSetBindingSource1.DataSource = this.qLSVDataSet;
-            this.qLSVDataSetBindingSource1.Position = 0;
-            // 
-            // studentDataSetBindingSource
-            // 
-            this.studentDataSetBindingSource.DataSource = this.studentDataSet;
-            this.studentDataSetBindingSource.Position = 0;
+            this.selectedCourseDataGridViewTextBoxColumn.DataPropertyName = "selectedCourse";
+            this.selectedCourseDataGridViewTextBoxColumn.HeaderText = "Selected Course";
+            this.selectedCourseDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.selectedCourseDataGridViewTextBoxColumn.Name = "selectedCourseDataGridViewTextBoxColumn";
             // 
             // frmPrint
             // 
@@ -538,6 +602,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSVDataSetBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDataSetBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLSVDataSetFullUpdated)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userloginBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -579,6 +650,14 @@
         private System.Windows.Forms.BindingSource studentBindingSource4;
         private System.Windows.Forms.BindingSource studentBindingSource5;
         private System.Windows.Forms.BindingSource qLSVDataSetBindingSource1;
+        private System.Windows.Forms.BindingSource studentBindingSource6;
+        private System.Windows.Forms.BindingSource studentDataSetBindingSource1;
+        private QLSVDataSetFullUpdated qLSVDataSetFullUpdated;
+        private System.Windows.Forms.BindingSource studentBindingSource7;
+        private QLSVDataSetFullUpdatedTableAdapters.studentTableAdapter studentTableAdapter2;
+        private System.Windows.Forms.BindingSource studentBindingSource9;
+        private System.Windows.Forms.BindingSource userloginBindingSource1;
+        private System.Windows.Forms.BindingSource studentBindingSource8;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mSSVDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
@@ -592,5 +671,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn majorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewImageColumn pictureDataGridViewImageColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn homeTownDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn selectedCourseDataGridViewTextBoxColumn;
     }
 }

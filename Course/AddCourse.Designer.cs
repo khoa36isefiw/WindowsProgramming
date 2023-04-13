@@ -38,7 +38,7 @@
             this.lblPeriod = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboSemester = new System.Windows.Forms.ComboBox();
             this.lblSemester = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -50,6 +50,7 @@
             this.txtCourseID.Name = "txtCourseID";
             this.txtCourseID.Size = new System.Drawing.Size(87, 30);
             this.txtCourseID.TabIndex = 0;
+            this.txtCourseID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCourseID_KeyPress);
             // 
             // txtCourseName
             // 
@@ -68,6 +69,7 @@
             this.txtCourseTime.Name = "txtCourseTime";
             this.txtCourseTime.Size = new System.Drawing.Size(87, 30);
             this.txtCourseTime.TabIndex = 2;
+            this.txtCourseTime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCourseTime_KeyPress);
             // 
             // txtCourseDescription
             // 
@@ -133,13 +135,17 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // comboBox1
+            // cboSemester
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(394, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(64, 26);
-            this.comboBox1.TabIndex = 9;
+            this.cboSemester.FormattingEnabled = true;
+            this.cboSemester.Items.AddRange(new object[] {
+            "HK1",
+            "HK2"});
+            this.cboSemester.Location = new System.Drawing.Point(394, 29);
+            this.cboSemester.Name = "cboSemester";
+            this.cboSemester.Size = new System.Drawing.Size(64, 26);
+            this.cboSemester.TabIndex = 9;
+            this.cboSemester.SelectedIndexChanged += new System.EventHandler(this.cboSemester_SelectedIndexChanged);
             // 
             // lblSemester
             // 
@@ -157,7 +163,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 402);
             this.Controls.Add(this.lblSemester);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboSemester);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.lblPeriod);
@@ -189,7 +195,7 @@
         private System.Windows.Forms.Label lblPeriod;
         private System.Windows.Forms.Label lblDescription;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboSemester;
         private System.Windows.Forms.Label lblSemester;
     }
 }

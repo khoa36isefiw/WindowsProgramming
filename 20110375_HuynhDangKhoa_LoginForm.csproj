@@ -116,6 +116,12 @@
     <Compile Include="Course\EditCourse.Designer.cs">
       <DependentUpon>EditCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Course\FormCourseStudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Course\FormCourseStudentList.Designer.cs">
+      <DependentUpon>FormCourseStudentList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Course\ListCourse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,6 +285,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLSVDataSetFull.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLSVDataSetFullUpdated.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLSVDataSetFullUpdated.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Result\resultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result\resultForm.Designer.cs">
+      <DependentUpon>resultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result\StaticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result\StaticsForm.Designer.cs">
+      <DependentUpon>StaticsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Score\AddScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -335,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Course\EditCourse.resx">
       <DependentUpon>EditCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Course\FormCourseStudentList.resx">
+      <DependentUpon>FormCourseStudentList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Course\ListCourse.resx">
       <DependentUpon>ListCourse.cs</DependentUpon>
@@ -405,6 +431,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Result\resultForm.resx">
+      <DependentUpon>resultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result\StaticsForm.resx">
+      <DependentUpon>StaticsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Score\AddScore.resx">
       <DependentUpon>AddScore.cs</DependentUpon>
     </EmbeddedResource>
@@ -468,6 +500,17 @@
     <None Include="QLSVDataSetFull.xss">
       <DependentUpon>QLSVDataSetFull.xsd</DependentUpon>
     </None>
+    <None Include="QLSVDataSetFullUpdated.xsc">
+      <DependentUpon>QLSVDataSetFullUpdated.xsd</DependentUpon>
+    </None>
+    <None Include="QLSVDataSetFullUpdated.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLSVDataSetFullUpdated.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLSVDataSetFullUpdated.xss">
+      <DependentUpon>QLSVDataSetFullUpdated.xsd</DependentUpon>
+    </None>
     <None Include="StudentDataSet.xsc">
       <DependentUpon>StudentDataSet.xsd</DependentUpon>
     </None>
@@ -496,6 +539,12 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Forms\first.png" />
+    <Content Include="Resources\back-button.png" />
+    <Content Include="Resources\first.png" />
+    <Content Include="Resources\left-arrow.png" />
+    <Content Include="Resources\next-track.png" />
+    <Content Include="Resources\right.png" />
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model.Context.cs</LastGenOutput>

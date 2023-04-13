@@ -30,7 +30,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         void loadData()
         {
-            for (int i = 0; i < 1500; i++)
+            for (int i = 0; i < 500; i++)
             {
                    Thread.Sleep(10);
             }
@@ -140,6 +140,12 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         private void mnuManageStudent_Click(object sender, EventArgs e)
         {
+            using (frmLoading frmLoad = new frmLoading(loadData))
+            {
+                frmLoad.ShowDialog();
+
+
+            }
             frmManageStudent manageStudent = new frmManageStudent();
             manageStudent.Show(this);
         }
@@ -152,6 +158,12 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         private void mnuStudentPrint_Click(object sender, EventArgs e)
         {
+            using (frmLoading frmLoad = new frmLoading(loadData))
+            {
+                frmLoad.ShowDialog();
+
+
+            }
             frmPrint print = new frmPrint();
             print.Show(this);
         }
@@ -242,6 +254,12 @@ namespace _20110375_HuynhDangKhoa_LoginForm
         {
             Score.RemoveScore resultS = new Score.RemoveScore();
             resultS.Show(this);
+        }
+
+        private void mnuResult_AVGResult_Click(object sender, EventArgs e)
+        {
+            Result.resultForm resultF = new Result.resultForm();
+            resultF.Show();
         }
     }
 }
