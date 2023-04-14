@@ -165,3 +165,7 @@ C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Window
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.FormCourseStudentList.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Result.ResultForm.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Result.StaticsForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\Xceed.Document.NET.dll
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\Xceed.Words.NET.dll
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\Aspose.Words.dll
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\Tamplate\Mau_Bao_Cao.doc

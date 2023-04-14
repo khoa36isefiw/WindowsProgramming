@@ -29,15 +29,24 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblWeb = new System.Windows.Forms.Label();
+            this.lblWF = new System.Windows.Forms.Label();
+            this.lblSP = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblCNPM = new System.Windows.Forms.Label();
+            this.lblExcellent = new System.Windows.Forms.Label();
+            this.lblMP = new System.Windows.Forms.Label();
+            this.lblOOP = new System.Windows.Forms.Label();
+            this.lblGood = new System.Windows.Forms.Label();
+            this.lblNabati = new System.Windows.Forms.Label();
+            this.lblDesign = new System.Windows.Forms.Label();
+            this.lblOOSE = new System.Windows.Forms.Label();
+            this.lblJAVA = new System.Windows.Forms.Label();
+            this.lblIT = new System.Windows.Forms.Label();
+            this.lblAverage = new System.Windows.Forms.Label();
+            this.lblFail = new System.Windows.Forms.Label();
+            this.lblDrop = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -45,117 +54,216 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Lime;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(123, 51);
+            this.label1.Location = new System.Drawing.Point(106, 17);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Static By Course";
             // 
-            // label2
+            // lblWeb
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(94, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Web Programming";
+            this.lblWeb.AutoSize = true;
+            this.lblWeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWeb.Location = new System.Drawing.Point(45, 71);
+            this.lblWeb.Name = "lblWeb";
+            this.lblWeb.Size = new System.Drawing.Size(158, 22);
+            this.lblWeb.TabIndex = 1;
+            this.lblWeb.Text = "Web Programming";
             // 
-            // label3
+            // lblWF
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(94, 209);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(194, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Windows Programming";
+            this.lblWF.AutoSize = true;
+            this.lblWF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWF.Location = new System.Drawing.Point(45, 175);
+            this.lblWF.Name = "lblWF";
+            this.lblWF.Size = new System.Drawing.Size(194, 22);
+            this.lblWF.TabIndex = 2;
+            this.lblWF.Text = "Windows Programming";
             // 
-            // label4
+            // lblSP
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(94, 154);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Software Project";
+            this.lblSP.AutoSize = true;
+            this.lblSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSP.Location = new System.Drawing.Point(45, 120);
+            this.lblSP.Name = "lblSP";
+            this.lblSP.Size = new System.Drawing.Size(142, 22);
+            this.lblSP.TabIndex = 3;
+            this.lblSP.Text = "Software Project";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Lime;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(539, 60);
+            this.label5.Location = new System.Drawing.Point(789, 54);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 22);
             this.label5.TabIndex = 4;
             this.label5.Text = "Static By Result";
             // 
-            // label6
+            // lblCNPM
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(94, 300);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 22);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "CNPM";
+            this.lblCNPM.AutoSize = true;
+            this.lblCNPM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCNPM.Location = new System.Drawing.Point(45, 266);
+            this.lblCNPM.Name = "lblCNPM";
+            this.lblCNPM.Size = new System.Drawing.Size(62, 22);
+            this.lblCNPM.TabIndex = 5;
+            this.lblCNPM.Text = "CNPM";
             // 
-            // label7
+            // lblExcellent
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(539, 105);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 22);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Pass";
+            this.lblExcellent.AutoSize = true;
+            this.lblExcellent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExcellent.Location = new System.Drawing.Point(718, 107);
+            this.lblExcellent.Name = "lblExcellent";
+            this.lblExcellent.Size = new System.Drawing.Size(83, 22);
+            this.lblExcellent.TabIndex = 6;
+            this.lblExcellent.Text = "Excellent";
             // 
-            // label8
+            // lblMP
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(94, 250);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(173, 22);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Mobile Programming";
+            this.lblMP.AutoSize = true;
+            this.lblMP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMP.Location = new System.Drawing.Point(45, 216);
+            this.lblMP.Name = "lblMP";
+            this.lblMP.Size = new System.Drawing.Size(173, 22);
+            this.lblMP.TabIndex = 7;
+            this.lblMP.Text = "Mobile Programming";
             // 
-            // label9
+            // lblOOP
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(94, 348);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(50, 22);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "OOP";
+            this.lblOOP.AutoSize = true;
+            this.lblOOP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOOP.Location = new System.Drawing.Point(404, 70);
+            this.lblOOP.Name = "lblOOP";
+            this.lblOOP.Size = new System.Drawing.Size(50, 22);
+            this.lblOOP.TabIndex = 8;
+            this.lblOOP.Text = "OOP";
             // 
-            // label10
+            // lblGood
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(532, 166);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(39, 22);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Fail";
+            this.lblGood.AutoSize = true;
+            this.lblGood.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGood.Location = new System.Drawing.Point(720, 149);
+            this.lblGood.Name = "lblGood";
+            this.lblGood.Size = new System.Drawing.Size(54, 22);
+            this.lblGood.TabIndex = 9;
+            this.lblGood.Text = "Good";
+            // 
+            // lblNabati
+            // 
+            this.lblNabati.AutoSize = true;
+            this.lblNabati.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNabati.Location = new System.Drawing.Point(404, 107);
+            this.lblNabati.Name = "lblNabati";
+            this.lblNabati.Size = new System.Drawing.Size(62, 22);
+            this.lblNabati.TabIndex = 10;
+            this.lblNabati.Text = "Nabati";
+            // 
+            // lblDesign
+            // 
+            this.lblDesign.AutoSize = true;
+            this.lblDesign.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDesign.Location = new System.Drawing.Point(404, 186);
+            this.lblDesign.Name = "lblDesign";
+            this.lblDesign.Size = new System.Drawing.Size(71, 22);
+            this.lblDesign.TabIndex = 12;
+            this.lblDesign.Text = "Design ";
+            // 
+            // lblOOSE
+            // 
+            this.lblOOSE.AutoSize = true;
+            this.lblOOSE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOOSE.Location = new System.Drawing.Point(404, 149);
+            this.lblOOSE.Name = "lblOOSE";
+            this.lblOOSE.Size = new System.Drawing.Size(76, 22);
+            this.lblOOSE.TabIndex = 11;
+            this.lblOOSE.Text = "OOOSE";
+            // 
+            // lblJAVA
+            // 
+            this.lblJAVA.AutoSize = true;
+            this.lblJAVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJAVA.Location = new System.Drawing.Point(404, 263);
+            this.lblJAVA.Name = "lblJAVA";
+            this.lblJAVA.Size = new System.Drawing.Size(55, 22);
+            this.lblJAVA.TabIndex = 14;
+            this.lblJAVA.Text = "JAVA";
+            // 
+            // lblIT
+            // 
+            this.lblIT.AutoSize = true;
+            this.lblIT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIT.Location = new System.Drawing.Point(404, 226);
+            this.lblIT.Name = "lblIT";
+            this.lblIT.Size = new System.Drawing.Size(144, 22);
+            this.lblIT.TabIndex = 13;
+            this.lblIT.Text = "Introduction to IT";
+            // 
+            // lblAverage
+            // 
+            this.lblAverage.AutoSize = true;
+            this.lblAverage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAverage.Location = new System.Drawing.Point(720, 186);
+            this.lblAverage.Name = "lblAverage";
+            this.lblAverage.Size = new System.Drawing.Size(77, 22);
+            this.lblAverage.TabIndex = 15;
+            this.lblAverage.Text = "Average";
+            // 
+            // lblFail
+            // 
+            this.lblFail.AutoSize = true;
+            this.lblFail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFail.Location = new System.Drawing.Point(720, 237);
+            this.lblFail.Name = "lblFail";
+            this.lblFail.Size = new System.Drawing.Size(39, 22);
+            this.lblFail.TabIndex = 16;
+            this.lblFail.Text = "Fail";
+            // 
+            // lblDrop
+            // 
+            this.lblDrop.AutoSize = true;
+            this.lblDrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDrop.Location = new System.Drawing.Point(718, 279);
+            this.lblDrop.Name = "lblDrop";
+            this.lblDrop.Size = new System.Drawing.Size(49, 22);
+            this.lblDrop.TabIndex = 17;
+            this.lblDrop.Text = "Drop";
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Location = new System.Drawing.Point(720, 324);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(51, 22);
+            this.lblTotal.TabIndex = 18;
+            this.lblTotal.Text = "Total";
             // 
             // StaticsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.ClientSize = new System.Drawing.Size(977, 539);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblDrop);
+            this.Controls.Add(this.lblFail);
+            this.Controls.Add(this.lblAverage);
+            this.Controls.Add(this.lblJAVA);
+            this.Controls.Add(this.lblIT);
+            this.Controls.Add(this.lblDesign);
+            this.Controls.Add(this.lblOOSE);
+            this.Controls.Add(this.lblNabati);
+            this.Controls.Add(this.lblGood);
+            this.Controls.Add(this.lblOOP);
+            this.Controls.Add(this.lblMP);
+            this.Controls.Add(this.lblExcellent);
+            this.Controls.Add(this.lblCNPM);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblSP);
+            this.Controls.Add(this.lblWF);
+            this.Controls.Add(this.lblWeb);
             this.Controls.Add(this.label1);
             this.Name = "StaticsForm";
             this.Text = "StaticsForm";
@@ -168,14 +276,23 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblWeb;
+        private System.Windows.Forms.Label lblWF;
+        private System.Windows.Forms.Label lblSP;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblCNPM;
+        private System.Windows.Forms.Label lblExcellent;
+        private System.Windows.Forms.Label lblMP;
+        private System.Windows.Forms.Label lblOOP;
+        private System.Windows.Forms.Label lblGood;
+        private System.Windows.Forms.Label lblNabati;
+        private System.Windows.Forms.Label lblDesign;
+        private System.Windows.Forms.Label lblOOSE;
+        private System.Windows.Forms.Label lblJAVA;
+        private System.Windows.Forms.Label lblIT;
+        private System.Windows.Forms.Label lblAverage;
+        private System.Windows.Forms.Label lblFail;
+        private System.Windows.Forms.Label lblDrop;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

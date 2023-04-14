@@ -261,5 +261,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
             Result.resultForm resultF = new Result.resultForm();
             resultF.Show();
         }
+
+        private void mnuResult_StaticsResult_Click(object sender, EventArgs e)
+        {
+            Result.StaticsForm sta = new Result.StaticsForm();
+            sta.ShowDialog();
+        }
     }
 }

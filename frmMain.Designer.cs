@@ -48,6 +48,7 @@
             this.mnuCourse_Remove = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCourse_Edit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCourse_Manage = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuCourse_Print = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuScore = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuSCORE_Add = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,12 +60,11 @@
             this.mnuSCORE_Result = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManageUser = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuManageUser_Account = new System.Windows.Forms.ToolStripMenuItem();
-            this.picBackGround = new System.Windows.Forms.PictureBox();
-            this.btnlogOut = new System.Windows.Forms.Button();
             this.rESULTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuResult_AVGResult = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuResult_StaticsResult = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.picBackGround = new System.Windows.Forms.PictureBox();
+            this.btnlogOut = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBackGround)).BeginInit();
             this.SuspendLayout();
@@ -198,42 +198,47 @@
             // mnuCourse_Add
             // 
             this.mnuCourse_Add.Name = "mnuCourse_Add";
-            this.mnuCourse_Add.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Add.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Add.Text = "Add Course";
             this.mnuCourse_Add.Click += new System.EventHandler(this.mnuCourse_Add_Click);
             // 
             // mnuCOURSE_List
             // 
             this.mnuCOURSE_List.Name = "mnuCOURSE_List";
-            this.mnuCOURSE_List.Size = new System.Drawing.Size(224, 26);
+            this.mnuCOURSE_List.Size = new System.Drawing.Size(201, 26);
             this.mnuCOURSE_List.Text = "List Course";
             this.mnuCOURSE_List.Click += new System.EventHandler(this.mnuCOURSE_List_Click);
             // 
             // mnuCourse_Remove
             // 
             this.mnuCourse_Remove.Name = "mnuCourse_Remove";
-            this.mnuCourse_Remove.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Remove.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Remove.Text = "Remove Course";
             this.mnuCourse_Remove.Click += new System.EventHandler(this.mnuCourse_Remove_Click);
             // 
             // mnuCourse_Edit
             // 
             this.mnuCourse_Edit.Name = "mnuCourse_Edit";
-            this.mnuCourse_Edit.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Edit.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Edit.Text = "Edit Course";
             this.mnuCourse_Edit.Click += new System.EventHandler(this.mnuCourse_Edit_Click);
             // 
             // mnuCourse_Manage
             // 
             this.mnuCourse_Manage.Name = "mnuCourse_Manage";
-            this.mnuCourse_Manage.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Manage.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Manage.Text = "Manage Courses";
             this.mnuCourse_Manage.Click += new System.EventHandler(this.mnuCourse_Manage_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(198, 6);
             // 
             // mnuCourse_Print
             // 
             this.mnuCourse_Print.Name = "mnuCourse_Print";
-            this.mnuCourse_Print.Size = new System.Drawing.Size(224, 26);
+            this.mnuCourse_Print.Size = new System.Drawing.Size(201, 26);
             this.mnuCourse_Print.Text = "Print";
             this.mnuCourse_Print.Click += new System.EventHandler(this.mnuCourse_Print_Click);
             // 
@@ -314,27 +319,6 @@
             this.mnuManageUser_Account.Text = "Account";
             this.mnuManageUser_Account.Click += new System.EventHandler(this.mnuManageUser_Account_Click);
             // 
-            // picBackGround
-            // 
-            this.picBackGround.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picBackGround.Image = ((System.Drawing.Image)(resources.GetObject("picBackGround.Image")));
-            this.picBackGround.Location = new System.Drawing.Point(0, 54);
-            this.picBackGround.Name = "picBackGround";
-            this.picBackGround.Size = new System.Drawing.Size(1008, 547);
-            this.picBackGround.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBackGround.TabIndex = 1;
-            this.picBackGround.TabStop = false;
-            // 
-            // btnlogOut
-            // 
-            this.btnlogOut.Location = new System.Drawing.Point(760, 12);
-            this.btnlogOut.Name = "btnlogOut";
-            this.btnlogOut.Size = new System.Drawing.Size(75, 36);
-            this.btnlogOut.TabIndex = 2;
-            this.btnlogOut.Text = "LogOut";
-            this.btnlogOut.UseVisualStyleBackColor = true;
-            this.btnlogOut.Click += new System.EventHandler(this.btnlogOut_Click);
-            // 
             // rESULTToolStripMenuItem
             // 
             this.rESULTToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -356,11 +340,28 @@
             this.mnuResult_StaticsResult.Name = "mnuResult_StaticsResult";
             this.mnuResult_StaticsResult.Size = new System.Drawing.Size(229, 26);
             this.mnuResult_StaticsResult.Text = "Statics Result";
+            this.mnuResult_StaticsResult.Click += new System.EventHandler(this.mnuResult_StaticsResult_Click);
             // 
-            // toolStripMenuItem3
+            // picBackGround
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(221, 6);
+            this.picBackGround.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBackGround.Image = ((System.Drawing.Image)(resources.GetObject("picBackGround.Image")));
+            this.picBackGround.Location = new System.Drawing.Point(0, 54);
+            this.picBackGround.Name = "picBackGround";
+            this.picBackGround.Size = new System.Drawing.Size(1008, 547);
+            this.picBackGround.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBackGround.TabIndex = 1;
+            this.picBackGround.TabStop = false;
+            // 
+            // btnlogOut
+            // 
+            this.btnlogOut.Location = new System.Drawing.Point(760, 12);
+            this.btnlogOut.Name = "btnlogOut";
+            this.btnlogOut.Size = new System.Drawing.Size(75, 36);
+            this.btnlogOut.TabIndex = 2;
+            this.btnlogOut.Text = "LogOut";
+            this.btnlogOut.UseVisualStyleBackColor = true;
+            this.btnlogOut.Click += new System.EventHandler(this.btnlogOut_Click);
             // 
             // frmMain
             // 

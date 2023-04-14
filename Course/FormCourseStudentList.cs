@@ -12,6 +12,9 @@ using iTextSharp.text;
 using Word = Microsoft.Office.Interop.Word;
 using System.Windows.Forms;
 using System.IO;
+using Xceed.Words.NET;
+
+using static iTextSharp.text.TabStop;
 
 namespace _20110375_HuynhDangKhoa_LoginForm.Course
 {
@@ -40,43 +43,28 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
 
         }
 
+        // print to word
         private void btnPrint_Click(object sender, EventArgs e)
         {
 
-            // kiem tra neu nguoi da da export roi
-            string fileName = "exportCourseStudentList.docx";
-            string path = Path.GetDirectoryName(fileName);
-
-            string nameWithoutExtension = Path.GetFileNameWithoutExtension(fileName);
-            string extension = Path.GetExtension(fileName);
-            int i = 2;
-            while (File.Exists(Path.Combine(path, fileName)))   // chekc if File Exists ?
-            {
-                fileName = nameWithoutExtension + "_" + i + extension;
-                i++;
-            }
-
             if (dataGridViewStudentList.Rows.Count > 0)
             {
-              
-
                 SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Filter = "Word Documents (.docx)|.docx";
-                //string fileName = "exportCourseStudentList.docx";
-                sfd.FileName = fileName;
-
-
+                sfd.FileName = "export_StudentListRegister.docx";
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
                     Export_Data_To_Word(dataGridViewStudentList, sfd.FileName);
                 }
-                
+                //ExportToWord(dataGVStudent_information);
+                //ExportToWord2(dataGVStudent_information);
 
             }
             else
             {
                 MessageBox.Show("No Record To Export !!!", "Info");
             }
+
         }
 
 
@@ -96,18 +84,44 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
                 Object oMissing = System.Reflection.Missing.Value;
 
                 Word.Section section = oDoc.Sections.Add();
-
                 // Thêm tiêu đề khóa học vào tài liệu
                 //Microsoft.Office.Interop.Word.Paragraph title = oDoc.Content.Paragraphs.Add();
                 Word.HeaderFooter title = section.Headers[Word.WdHeaderFooterIndex.wdHeaderFooterPrimary];
-                title.Range.Text = "Tên khóa học: " + txtCourseName2.Text + "\t\tSemester: " + lblShow.Text; ;
+
+                string time = DateTime.Today.Day.ToString("00") + "/" + DateTime.Today.Month.ToString("00") + "/"
+                + DateTime.Today.Year.ToString("0000");
+
+                // định nghĩa cững luôn cho nhanh :)))
+                title.Range.Text = "TRƯỜNG ĐẠI HỌC SPKT TP.HCM\n"  +
+                    "\nKHOA ĐÀO TẠO CHẤT LƯỢNG CAO\n" + 
+                    "\nNGÀNH CÔNG NGHỆ THÔNG TIN\n" +
+                    "\nMÔN HỌC: " + txtCourseName2.Text + "\n"+
+                    "\nHỌC KỲ: " + lblShow.Text + " - NĂM HỌC 2022 - 2023"  + "\n"+
+                    "\n_____________________________________________________________________________________________________________________\n" +
+                    "\nMôn học - Nhóm:              Windows Programming (2+1) - 04CLC"+ "\tSố tín chỉ:"+"\t3" +
+                    "\nLớp học phần:                    222WIPR230579E_04CLC" +
+                    "\nGBGD:                               Lê Vĩnh Thịnh (0132)" + 
+                    "\nNgười thực hiện:                Huỳnh Đăng Khoa"+
+                    "\nNgày:                                 " + time + 
+                    "\nMã số sinh viên:                20110375";
+
+                title.Range.Font.Name = "Times New Roman";
+                // Thêm Section Break và ngắt liên kết với Header của phần trước
+                object breakType = Word.WdBreakType.wdSectionBreakContinuous;
+                oDoc.ActiveWindow.Selection.InsertBreak(ref breakType);
+                title.LinkToPrevious = false;
+                title.Range.Text = "";
+
+             
 
                 title.Range.Font.Bold = 1;
                 title.Range.Font.Size = 14;
-                title.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphLeft;
-                title.Range.InsertParagraphAfter();
+                                title.Range.ParagraphFormat.Alignment = Word.WdParagraphAlignment.wdAlignParagraphCenter;
+                title.Range.InsertParagraphBefore();
 
-                
+
+
+
 
 
                 // Thêm tên cột cho bảng
@@ -152,7 +166,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
 
                     }
                 }
-                
+
 
                 // Lưu tài liệu Word
                 oDoc.SaveAs2(@"C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\Export");
@@ -161,7 +175,13 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Course
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
+            Application.Exit();
         }
+
+
+
+
+       
     }
 }

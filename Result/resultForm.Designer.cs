@@ -37,10 +37,11 @@
             this.lblLastName = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblStudentID = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtFindStu = new System.Windows.Forms.TextBox();
+            this.txtLName = new System.Windows.Forms.TextBox();
+            this.txtFName = new System.Windows.Forms.TextBox();
+            this.txtStudentId = new System.Windows.Forms.TextBox();
+            this.btnBC = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_ResultStudent)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@
             this.dataGridView_ResultStudent.RowTemplate.Height = 24;
             this.dataGridView_ResultStudent.Size = new System.Drawing.Size(722, 285);
             this.dataGridView_ResultStudent.TabIndex = 25;
+            this.dataGridView_ResultStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_ResultStudent_CellClick);
             // 
             // btnCancel
             // 
@@ -63,6 +65,7 @@
             this.btnCancel.TabIndex = 24;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnPrint
             // 
@@ -72,6 +75,7 @@
             this.btnPrint.TabIndex = 23;
             this.btnPrint.Text = "Print";
             this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // btnSearch
             // 
@@ -81,6 +85,7 @@
             this.btnSearch.TabIndex = 22;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lblResult
             // 
@@ -127,39 +132,49 @@
             this.lblStudentID.TabIndex = 17;
             this.lblStudentID.Text = "Student ID";
             // 
-            // textBox4
+            // txtFindStu
             // 
-            this.textBox4.Location = new System.Drawing.Point(150, 324);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 16;
+            this.txtFindStu.Location = new System.Drawing.Point(150, 324);
+            this.txtFindStu.Name = "txtFindStu";
+            this.txtFindStu.Size = new System.Drawing.Size(100, 22);
+            this.txtFindStu.TabIndex = 16;
             // 
-            // textBox3
+            // txtLName
             // 
-            this.textBox3.Location = new System.Drawing.Point(150, 213);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 15;
+            this.txtLName.Location = new System.Drawing.Point(150, 213);
+            this.txtLName.Name = "txtLName";
+            this.txtLName.Size = new System.Drawing.Size(100, 22);
+            this.txtLName.TabIndex = 15;
             // 
-            // textBox2
+            // txtFName
             // 
-            this.textBox2.Location = new System.Drawing.Point(150, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 14;
+            this.txtFName.Location = new System.Drawing.Point(150, 128);
+            this.txtFName.Name = "txtFName";
+            this.txtFName.Size = new System.Drawing.Size(100, 22);
+            this.txtFName.TabIndex = 14;
             // 
-            // textBox1
+            // txtStudentId
             // 
-            this.textBox1.Location = new System.Drawing.Point(150, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 13;
+            this.txtStudentId.Location = new System.Drawing.Point(150, 65);
+            this.txtStudentId.Name = "txtStudentId";
+            this.txtStudentId.Size = new System.Drawing.Size(100, 22);
+            this.txtStudentId.TabIndex = 13;
+            // 
+            // btnBC
+            // 
+            this.btnBC.Location = new System.Drawing.Point(290, 380);
+            this.btnBC.Name = "btnBC";
+            this.btnBC.Size = new System.Drawing.Size(136, 31);
+            this.btnBC.TabIndex = 26;
+            this.btnBC.Text = "Báo Cáo";
+            this.btnBC.UseVisualStyleBackColor = true;
             // 
             // resultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 450);
+            this.Controls.Add(this.btnBC);
             this.Controls.Add(this.dataGridView_ResultStudent);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnPrint);
@@ -169,10 +184,10 @@
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblStudentID);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtFindStu);
+            this.Controls.Add(this.txtLName);
+            this.Controls.Add(this.txtFName);
+            this.Controls.Add(this.txtStudentId);
             this.Name = "resultForm";
             this.Text = "resultForm";
             this.Load += new System.EventHandler(this.resultForm_Load);
@@ -193,9 +208,10 @@
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblStudentID;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtFindStu;
+        private System.Windows.Forms.TextBox txtLName;
+        private System.Windows.Forms.TextBox txtFName;
+        private System.Windows.Forms.TextBox txtStudentId;
+        private System.Windows.Forms.Button btnBC;
     }
 }
