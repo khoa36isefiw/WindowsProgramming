@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace _20110375_HuynhDangKhoa_LoginForm.Forms
 {
-    public partial class AddCourseForm : Form
+    public partial class SelectedCourse : Form
     {
         MY_DB mydb = new MY_DB();
         STUDENT student = new STUDENT();
 
         private int lastSelectedIndex;  // flag phát hiện nếu người dùng chọn nhiều làn vào trên cbo
 
-        public AddCourseForm()
+        public SelectedCourse()
         {
             InitializeComponent();
         }

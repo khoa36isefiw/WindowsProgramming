@@ -1,6 +1,6 @@
 ﻿namespace _20110375_HuynhDangKhoa_LoginForm.Forms
 {
-    partial class AddCourseForm
+    partial class SelectedCourse
     {
         /// <summary>
         /// Required designer variable.
@@ -154,7 +154,7 @@
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // AddCourseForm
+            // SelectedCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -170,7 +170,7 @@
             this.Controls.Add(this.lblSelectedCourse);
             this.Controls.Add(this.lblAvailableCourse);
             this.Controls.Add(this.lblStudentID);
-            this.Name = "AddCourseForm";
+            this.Name = "SelectedCourse";
             this.Text = "AddFormCourse";
             this.Load += new System.EventHandler(this.AddCourseForm_Load);
             this.ResumeLayout(false);

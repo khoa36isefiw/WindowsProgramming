@@ -11,7 +11,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 {
     internal class MY_DB
     {
-        public static string instance;
+     //   public static string instance;
         SqlConnection conn = new SqlConnection(
             @"Data Source=LAPTOP-L5HNLU56\SQLEXPRESS;Initial Catalog=QLSV;Integrated Security=True");
         

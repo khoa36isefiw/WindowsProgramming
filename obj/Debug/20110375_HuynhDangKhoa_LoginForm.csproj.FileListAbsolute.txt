@@ -156,7 +156,6 @@ C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Window
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.ListCourse.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.ManageCoursesForm.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Course.PrintCourseForm.resources
-C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Forms.AddCourseForm.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Score.AddScore.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Score.RemoveScore.resources
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Score.AverageScore.resources
@@ -169,3 +168,15 @@ C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Window
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\Xceed.Words.NET.dll
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\Aspose.Words.dll
 C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\bin\Debug\Tamplate\Mau_Bao_Cao.doc
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Forms.HumanResourceRegister.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.HumanResource.frmAddContact.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.HumanResource.frmListFullContact.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.HumanResource.frmSelectedContact.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Forms.SelectedCourse.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.HumanResource.frmEditContact.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Contact.ContactClassForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.ClassStudentListForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.EditHRForm.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Forms.frmMainHR.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.Contact.frmContactGroups.resources
+C:\Users\Asus\OneDrive\Máy tính\Khoa\Đại Học\Junior\HK 2 2022-2023\Windows Programming\Git\StudentManagement\StudentManagement\obj\Debug\_20110375_HuynhDangKhoa_LoginForm.HumanResource.frmManageAccountHR.resources

@@ -60,37 +60,145 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
             // Connect to the Database
             MY_DB db = new MY_DB();
-            SqlDataAdapter adapter = new SqlDataAdapter();
-
-            DataTable table = new DataTable();
-
-            SqlCommand command = new SqlCommand("SELECT * FROM user_login WHERE userName = @User AND userPassword =@Pass", db.getConnection);
-
-
-            //Difine User and Pass
-            command.Parameters.Add("@User", SqlDbType.VarChar).Value = txtUserName.Text;
-            command.Parameters.Add("@Pass", SqlDbType.VarChar).Value = txtPassword.Text;
-
-            adapter.SelectCommand = command;
-
-            adapter.Fill(table);
-            if (table.Rows.Count > 0)
+            if (radbStudent.Checked == true)
             {
-                this.DialogResult = DialogResult.OK;
+                SqlDataAdapter adapter = new SqlDataAdapter();
+
+                DataTable table = new DataTable();
+
+                SqlCommand command = new SqlCommand("SELECT * FROM user_login WHERE userName = @User AND userPassword =@Pass", db.getConnection);
+
+
+                //Difine User and Pass
+                command.Parameters.Add("@User", SqlDbType.VarChar).Value = txtUserName.Text;
+                command.Parameters.Add("@Pass", SqlDbType.VarChar).Value = txtPassword.Text;
+
+                adapter.SelectCommand = command;
+
+                adapter.Fill(table);
+                if (table.Rows.Count > 0)
+                {
+                    frmMain mainF = new frmMain();
+                    mainF.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Login error", "Confirm",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+            else if (radbHuman.Checked == true)
+            {
+                //table username and password of Human Resource
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                DataTable table = new DataTable();
+                SqlCommand command = new SqlCommand("SELECT * FROM HumanResource WHERE uname =" +
+                        " @username And pwd = @password", db.getConnection);
+
+                command.Parameters.Add("@username", SqlDbType.VarChar).Value = txtUserName.Text;
+                command.Parameters.Add("@password", SqlDbType.VarChar).Value = txtPassword.Text;
+
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+                
+                if (table.Rows.Count > 0)
+                {
+                    int HRID = Convert.ToInt16(table.Rows[0][0].ToString());
+                    Global.SetGlobalUserId(HRID);
+
+                    //Hide();
+
+                    Forms.frmMainHR fHR = new Forms.frmMainHR();
+                    fHR.Show(this);
+
+                    //Gán biến form cho fromHR để gọi ngược lại loginform khi sign out
+
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Login error", "Confirm",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+            else if(rad_btn_Admin.Checked == true)
+            {
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                DataTable table = new DataTable();
+                SqlCommand command = new SqlCommand("SELECT * FROM HumanResource WHERE uname = 'admin' And pwd = '1'", db.getConnection);
+                
+
+                adapter.SelectCommand = command;
+
+                adapter.Fill(table);
+                if (table.Rows.Count > 0)
+                {
+                    Forms.frmMainHR fHR = new Forms.frmMainHR();
+                    fHR.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Login error", "Confirm",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
             }
             else
             {
-                MessageBox.Show("Login error", "Confirm",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                MessageBox.Show("Please Chose User Type", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
+
+
+
+            #region cmt
+
+            //SqlDataAdapter adapter = new SqlDataAdapter();
+
+            //DataTable table = new DataTable();
+
+            //SqlCommand command = new SqlCommand("SELECT * FROM user_login WHERE userName = @User AND userPassword =@Pass", db.getConnection);
+
+
+            ////Difine User and Pass
+            //command.Parameters.Add("@User", SqlDbType.VarChar).Value = txtUserName.Text;
+            //command.Parameters.Add("@Pass", SqlDbType.VarChar).Value = txtPassword.Text;
+
+            //adapter.SelectCommand = command;
+
+            //adapter.Fill(table);
+            //if (table.Rows.Count > 0)
+            //{
+            //    this.DialogResult = DialogResult.OK;
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Login error", "Confirm",
+            //        MessageBoxButtons.OK,
+            //        MessageBoxIcon.Error);
+            //}
+            #endregion
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-
-            frmSignUp fSignUp = new frmSignUp();
-            fSignUp.ShowDialog();
+            if(radbStudent.Checked == true)
+            {
+                frmSignUp fSignUpForStudent = new frmSignUp();
+                fSignUpForStudent.ShowDialog();
+            }
+            else if (radbHuman.Checked == true)
+            {
+                Forms.HumanResourceRegister fSignUpForHR = new Forms.HumanResourceRegister();
+                fSignUpForHR.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please Chose User Type", "Registor Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
 
         private void btnResetPass_Click(object sender, EventArgs e)

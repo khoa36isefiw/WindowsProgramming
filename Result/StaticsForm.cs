@@ -32,17 +32,17 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Result
             table = score.getAverageCourse();
             for (int i = 0; i < table.Rows.Count; i++)
             {
-                if (lblWeb.Text == table.Rows[i]["label"].ToString()) lblWeb.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblSP.Text == table.Rows[i]["label"].ToString()) lblSP.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblWF.Text == table.Rows[i]["label"].ToString()) lblWF.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblMP.Text == table.Rows[i]["label"].ToString()) lblMP.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblCNPM.Text == table.Rows[i]["label"].ToString()) lblCNPM.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblOOP.Text == table.Rows[i]["label"].ToString()) lblOOP.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblNabati.Text == table.Rows[i]["label"].ToString()) lblNabati.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblOOSE.Text == table.Rows[i]["label"].ToString()) lblOOSE.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblDesign.Text == table.Rows[i]["label"].ToString()) lblDesign.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblIT.Text == table.Rows[i]["label"].ToString()) lblIT.Text = table.Rows[i]["Average Grade"].ToString();
-                if (lblJAVA.Text == table.Rows[i]["label"].ToString()) lblJAVA.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_WP.Text == table.Rows[i]["label"].ToString()) lbl_WP.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_SP.Text == table.Rows[i]["label"].ToString()) lbl_SP.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_WF.Text == table.Rows[i]["label"].ToString()) lbl_WF.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_MB.Text == table.Rows[i]["label"].ToString()) lbl_MB.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_CNPM.Text == table.Rows[i]["label"].ToString()) lbl_CNPM.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_OOP.Text == table.Rows[i]["label"].ToString()) lbl_OOP.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_Nabati.Text == table.Rows[i]["label"].ToString()) lbl_Nabati.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_OOSE.Text == table.Rows[i]["label"].ToString()) lbl_OOSE.Text = table.Rows[i]["Average Grade"].ToString();
+                if (llb_De.Text == table.Rows[i]["label"].ToString()) llb_De.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_IntroIT.Text == table.Rows[i]["label"].ToString()) lbl_IntroIT.Text = table.Rows[i]["Average Grade"].ToString();
+                if (lbl_Java.Text == table.Rows[i]["label"].ToString()) lbl_Java.Text = table.Rows[i]["Average Grade"].ToString();
 
             }
         }
@@ -51,11 +51,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Result
             DataTable table = new DataTable();
             table = score.getAllCourseScoreAndResult();
             double totalStudent = Convert.ToDouble(student.totalStudent());
-            double ExcellentStudent = 0;
-            double GoodStudent = 0;
+            double ExcellentStudent = 2;
+            double GoodStudent = 1;
             double AverageStudent = 0;
             double FailStudent = 0;
-            double OutStudent = 0;
+            double OutStudent = 1;
 
             //trích xuất bảng để lấy dữ liệu result cho từng loại học sinh
             for (int i = 0; i < table.Rows.Count; i++)
@@ -76,12 +76,12 @@ namespace _20110375_HuynhDangKhoa_LoginForm.Result
 
           
 
-            lblExcellent.Text += (ExcellentStudent.ToString() + " (Students)");
-            lblGood.Text += GoodStudent.ToString() + " (Students)";
-            lblAverage.Text = AverageStudent.ToString() + " (Students)";
-            lblFail.Text += FailStudent.ToString() + " (Students)";
-            lblDrop.Text += OutStudent.ToString() + " (Students)";
-            lblTotal.Text += totalStudent.ToString() + " (Students)";
+            lbl_Excellent.Text = (ExcellentStudent.ToString() + " (Students)");
+            lbl_good.Text = GoodStudent.ToString() + " (Students)";
+            lbl_Avg.Text = AverageStudent.ToString() + " (Students)";
+            lbl_fail.Text = FailStudent.ToString() + " (Students)";
+            lbl_drop.Text = OutStudent.ToString() + " (Students)";
+            lbl_total.Text = totalStudent.ToString() + " (Students)";
 
             ////Pie Chart
             //PieChart.Series["Result"].Points.AddXY("Excellent", PExcellentStudent);

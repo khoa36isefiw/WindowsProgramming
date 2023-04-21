@@ -47,6 +47,7 @@
             this.btnResetPass = new Guna.UI2.WinForms.Guna2Button();
             this.btnGG = new System.Windows.Forms.Button();
             this.helpProvider = new System.Windows.Forms.HelpProvider();
+            this.rad_btn_Admin = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -269,12 +270,24 @@
             this.btnGG.UseVisualStyleBackColor = true;
             this.btnGG.Click += new System.EventHandler(this.btnGG_Click);
             // 
+            // rad_btn_Admin
+            // 
+            this.rad_btn_Admin.AutoSize = true;
+            this.rad_btn_Admin.Location = new System.Drawing.Point(152, 255);
+            this.rad_btn_Admin.Name = "rad_btn_Admin";
+            this.rad_btn_Admin.Size = new System.Drawing.Size(66, 20);
+            this.rad_btn_Admin.TabIndex = 26;
+            this.rad_btn_Admin.TabStop = true;
+            this.rad_btn_Admin.Text = "Admin";
+            this.rad_btn_Admin.UseVisualStyleBackColor = true;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1105, 609);
+            this.Controls.Add(this.rad_btn_Admin);
             this.Controls.Add(this.btnGG);
             this.Controls.Add(this.btnResetPass);
             this.Controls.Add(this.btnSignUp);
@@ -320,6 +333,7 @@
         internal Guna.UI2.WinForms.Guna2TextBox txtUserName;
         private System.Windows.Forms.Button btnGG;
         private System.Windows.Forms.HelpProvider helpProvider;
+        private System.Windows.Forms.RadioButton rad_btn_Admin;
     }
 }
 

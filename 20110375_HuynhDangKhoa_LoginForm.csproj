@@ -120,6 +120,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\ReportExtensionMethod.cs" />
+    <Compile Include="ClassStudentListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassStudentListForm.Designer.cs">
+      <DependentUpon>ClassStudentListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\Contact.cs" />
+    <Compile Include="Contact\ContactClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact\ContactClassForm.Designer.cs">
+      <DependentUpon>ContactClassForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact\frmContactGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact\frmContactGroups.Designer.cs">
+      <DependentUpon>frmContactGroups.cs</DependentUpon>
+    </Compile>
     <Compile Include="Course\COURSE.cs" />
     <Compile Include="Course\EditCourse.cs">
       <SubType>Form</SubType>
@@ -168,11 +187,23 @@
     <Compile Include="Course\AddCourse.Designer.cs">
       <DependentUpon>AddCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditHRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditHRForm.Designer.cs">
+      <DependentUpon>EditHRForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddCourseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AddCourseForm.Designer.cs">
       <DependentUpon>AddCourseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HRForm.Designer.cs">
+      <DependentUpon>HRForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmAddStudent.cs">
       <SubType>Form</SubType>
@@ -203,6 +234,12 @@
     </Compile>
     <Compile Include="Forms\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HumanResourceRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HumanResourceRegister.Designer.cs">
+      <DependentUpon>HumanResourceRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -263,6 +300,38 @@
     </Compile>
     <Compile Include="frmStatisticsPieChart.Designer.cs">
       <DependentUpon>frmStatisticsPieChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="HumanResource\frmAddContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HumanResource\frmAddContact.Designer.cs">
+      <DependentUpon>frmAddContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResource\frmEditContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HumanResource\frmEditContact.Designer.cs">
+      <DependentUpon>frmEditContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResource\frmListFullContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HumanResource\frmListFullContact.Designer.cs">
+      <DependentUpon>frmListFullContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResource\frmManageAccountHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HumanResource\frmManageAccountHR.Designer.cs">
+      <DependentUpon>frmManageAccountHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HumanResource\frmSelectedContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HumanResource\frmSelectedContact.Designer.cs">
+      <DependentUpon>frmSelectedContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Model.Context.cs">
       <AutoGen>True</AutoGen>
@@ -364,6 +433,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UserDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClassStudentListForm.resx">
+      <DependentUpon>ClassStudentListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\ContactClassForm.resx">
+      <DependentUpon>ContactClassForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact\frmContactGroups.resx">
+      <DependentUpon>frmContactGroups.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Course\AddCourse.resx">
       <DependentUpon>AddCourse.cs</DependentUpon>
     </EmbeddedResource>
@@ -385,8 +463,14 @@
     <EmbeddedResource Include="Course\Removecourse.resx">
       <DependentUpon>Removecourse.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditHRForm.resx">
+      <DependentUpon>EditHRForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddCourseForm.resx">
       <DependentUpon>AddCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HRForm.resx">
+      <DependentUpon>HRForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAddStudent.resx">
       <DependentUpon>frmAddStudent.cs</DependentUpon>
@@ -402,6 +486,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HumanResourceRegister.resx">
+      <DependentUpon>HumanResourceRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -432,6 +519,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmStatisticsPieChart.resx">
       <DependentUpon>frmStatisticsPieChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HumanResource\frmAddContact.resx">
+      <DependentUpon>frmAddContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HumanResource\frmEditContact.resx">
+      <DependentUpon>frmEditContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HumanResource\frmListFullContact.resx">
+      <DependentUpon>frmListFullContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HumanResource\frmManageAccountHR.resx">
+      <DependentUpon>frmManageAccountHR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HumanResource\frmSelectedContact.resx">
+      <DependentUpon>frmSelectedContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

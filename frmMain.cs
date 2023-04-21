@@ -65,7 +65,6 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                     mnuManageUser.Enabled = false;
                 }
 
-
             }
 
 

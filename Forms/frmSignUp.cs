@@ -260,5 +260,11 @@ namespace _20110375_HuynhDangKhoa_LoginForm
                 txtReEnterPass.PasswordChar = '*';
             }
         }
+
+        private void lblHaveAccount_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Close();
+            
+        }
     }
 }

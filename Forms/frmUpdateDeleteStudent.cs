@@ -277,7 +277,7 @@ namespace _20110375_HuynhDangKhoa_LoginForm
 
         private void btnAddCourse_Click(object sender, EventArgs e)
         {
-            Forms.AddCourseForm addCF = new Forms.AddCourseForm();
+            Forms.SelectedCourse addCF = new Forms.SelectedCourse();
             addCF.Show();
         }
 
